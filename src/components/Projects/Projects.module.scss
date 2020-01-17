@@ -10,11 +10,6 @@
 
 .Article {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-// .Article::after {
-//     content: '';
-//     flex: auto;
-// }
