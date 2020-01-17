@@ -1,0 +1,62 @@
+.SingleProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 10px;
+  text-align: justify;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media (min-width: 972px) {
+  .SingleProject {
+    width: 320px;
+  }
+}
+@media (min-width: 1040px) {
+  .SingleProject {
+    width: 330px;
+    height: 530px;
+  }
+}
+.SingleProject:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.SingleProject:hover .ProjectName {
+  text-decoration: underline;
+}
+.Image {
+  width: 100%;
+  margin: auto;
+}
+.Img {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.Information {
+  padding: 5px 5px;
+  margin: 2%;
+  margin-top: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ShortDescription {
+  flex-grow: 1;
+}
+.TechnologiesUsed {
+  margin-top: 5%;
+  color: #606060;
+  font-size: 90%;
+}
+.ProjectName {
+  font-weight: 400;
+  font-size: 150%;
+  text-align: center;
+  padding-top: 30px;
+}

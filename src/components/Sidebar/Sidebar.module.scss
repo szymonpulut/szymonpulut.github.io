@@ -1,0 +1,37 @@
+@import 'styles/globalMixins.scss';
+
+.Sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $background-color;
+
+    transition: transform $animation-length-quicker ease-out;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.Link {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.Open {
+    transform: translateY(0);
+}
+
+.Close {
+    transform: translateY(-100%);
+    display: none;
+}
+
+.Scrolled {
+    background-color: $scrolled-header-background-color;
+}

@@ -1,0 +1,34 @@
+@import 'styles/globalMixins.scss';
+
+.Burger {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.Bar1,
+.Bar2,
+.Bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #a9fdac;
+    border: 1px solid #32d176;
+    border-radius: 2px;
+    margin: 5px 0;
+    transition-duration: $animation-length-quicker;
+}
+
+.Change {
+    .Bar1 {
+        transform: rotate(-45deg) translate(-8px, 7px);
+    }
+    .Bar2 {
+        opacity: 0;
+    }
+    .Bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}

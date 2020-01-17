@@ -1,0 +1,29 @@
+$background-color: #f5f6f7;
+$midpoint-color-1: #f8f8f9;
+$midpoint-color-2: #fafbfb;
+$scrolled-header-background-color: #fdfdfd;
+$header-font-color: #292929;
+$header-font-family: Roboto;
+$header-font-size: 4em;
+$text-font-color: #292929;
+$text-font-family: Lato;
+$text-font-size: 20px;
+$header-height-mobile: 70px;
+$header-height-desktop: 90px;
+$media-breakpoint-1: 768px;
+$media-breakpoint-2: 850px;
+$media-breakpoint-3: 1079px;
+$media-breakpoint-4: 1919px;
+$animation-length-longer: 660ms;
+$animation-length-quicker: 200ms;
+$padding-horizontal-content-mobile: 20px;
+
+:export {
+    backgroundColor: $background-color;
+    scrolledHeaderBackgroundColor: $scrolled-header-background-color;
+    midpointColor1: $midpoint-color-1;
+    midpointColor2: $midpoint-color-2;
+    headerHeightMobile: $header-height-mobile;
+    headerHeightDesktop: $header-height-desktop;
+    animationLengthLonger: $animation-length-longer;
+}

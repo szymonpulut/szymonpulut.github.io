@@ -1,0 +1,20 @@
+@import 'styles/globalMixins.scss';
+
+.Projects {
+    @include container;
+}
+
+.Header {
+    @include header;
+}
+
+.Article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+// .Article::after {
+//     content: '';
+//     flex: auto;
+// }

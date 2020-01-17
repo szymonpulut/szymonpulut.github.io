@@ -1,0 +1,53 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "description": "My personal website and portfolio - Szymon Pulut (Front End Developer)",
+  "version": "1.0.0",
+  "author": "Szymon Pulut <szymon.pulut@gmail.com>",
+  "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
+    "body-scroll-lock": "^2.6.4",
+    "gatsby": "^2.18.23",
+    "gatsby-image": "^2.2.33",
+    "gatsby-plugin-manifest": "^2.2.29",
+    "gatsby-plugin-offline": "^3.0.23",
+    "gatsby-plugin-react-helmet": "^3.1.15",
+    "gatsby-plugin-sass": "^2.1.24",
+    "gatsby-plugin-sharp": "^2.3.4",
+    "gatsby-remark-images": "^3.1.34",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-source-filesystem": "^2.1.38",
+    "gatsby-transformer-remark": "^2.6.38",
+    "gatsby-transformer-sharp": "^2.3.5",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-scroll": "^1.7.14"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  }
+}
