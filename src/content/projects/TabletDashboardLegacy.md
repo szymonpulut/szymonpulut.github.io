@@ -1,6 +1,6 @@
 ---
 title: 'Tablet Dashboard legacy'
-technologies: 'HTML5, CSS3 (display: grid), JavaScript (with jQuery)'
+technologies: 'HTML5, CSS3 (grid display), JavaScript (with jQuery)'
 shortDesc: "Basic dashboard for my smart home project. Legacy because I wrote it when I didn't have much knowledge or experience in JS."
 priority: 1
 slug: 'tabletDashboardLegacy'

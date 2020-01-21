@@ -1,6 +1,6 @@
 ---
 title: 'Workout Tracker (in progress)'
-technologies: 'ReactJS (with Router, Redux and axios), JavaScript, HTML5, CSS3'
+technologies: 'React (with Router, Redux, and axios), JavaScript, HTML5, CSS3'
 shortDesc: 'My first real-world React app created to help with my gym workouts.'
 priority: 6
 slug: 'workoutTracker'

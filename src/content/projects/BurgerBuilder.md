@@ -1,6 +1,6 @@
 ---
 title: 'Burger Builder'
-technologies: 'React (with Router, Redux and axios), ES6 JavaScript, HTML5, CSS3'
+technologies: 'React (with Router, Redux, and axios), ES6 JavaScript, HTML5, CSS3'
 shortDesc: 'Burger Builder app created during a comprehensive online React course.'
 priority: 4
 slug: 'burgerBuilder'
