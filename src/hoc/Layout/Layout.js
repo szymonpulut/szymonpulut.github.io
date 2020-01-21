@@ -44,7 +44,6 @@ const Layout = ({ children }) => {
         toggleSidebar();
     };
 
-    // scrolled
     useScrollPosition(({ currPos }) => {
         if (currPos.y < -1 && pageScrolled !== true) {
             setPageScrolled(true);
