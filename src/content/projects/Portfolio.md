@@ -9,6 +9,10 @@ headerImage: ./portfolio.png
 
 Simple and minimalistic portfolio website to showcase my projects and abilities. Made in React & Gatsby for server-side rendering. Enforced airbnb style guide. I learned a lot about consistent styling and used global SASS mixins. Deployed on GitHub Pages.
 
-Live version: [https://szymonpulut.com](https://szymonpulut.com)
+**Live version:**
 
-Github repository: [https://github.com/szymonpulut/szymonpulut.github.io](https://github.com/szymonpulut/szymonpulut.github.io)
+[https://szymonpulut.com](https://szymonpulut.com)
+
+**GitHub repository:**
+
+[https://github.com/szymonpulut/szymonpulut.github.io](https://github.com/szymonpulut/szymonpulut.github.io)

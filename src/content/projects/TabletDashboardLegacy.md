@@ -11,6 +11,10 @@ Tablet Dashboard Legacy is a dashboard for my custom smart home system. Displays
 
 **Written in legacy Javascript, when I didn't have much knowledge or experience - code is not optimal by any means (and looks ugly).** Uses CSS3 grid display, ES5 JS, bits of jQuery. I plan to rewrite it as React app.
 
-Youtube demo: [https://youtube.com](https://youtube.com)
+**Youtube demo:**
 
-Github repo: [https://github.com](https://github.com)
+[https://youtube.com](https://youtube.com)
+
+**GitHub repository:**
+
+[https://github.com](https://github.com)
