@@ -11,7 +11,10 @@ const Contact = ({ id }) => {
                 <p>
                     {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                     my github profile:{' '}
-                    <a href="https://github.com/szymonpulut/">
+                    <a
+                        className={styles.Link}
+                        href="https://github.com/szymonpulut/"
+                    >
                         github.com/szymonpulut
                     </a>
                 </p>
