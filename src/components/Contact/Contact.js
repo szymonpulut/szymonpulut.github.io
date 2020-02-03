@@ -8,6 +8,13 @@ const Contact = ({ id }) => {
         <section className={styles.Contact} id={id}>
             <header className={styles.Header}>contact & resume</header>
             <article className={styles.Article}>
+                <p>
+                    {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+                    my github profile:{' '}
+                    <a href="https://github.com/szymonpulut/">
+                        github.com/szymonpulut
+                    </a>
+                </p>
                 <p>send me an email: szymon.pulut@gmail.com</p>
                 <p>
                     {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
