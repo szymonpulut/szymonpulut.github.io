@@ -71,7 +71,7 @@ const Layout = ({ children }) => {
     return (
         <div className={styles.Container}>
             <Helmet>
-                <title>Szymon Pulut - Front End Developer</title>
+                <title>Szymon Pulut - Web Developer</title>
                 <meta name="theme-color" content={themeColor} />
             </Helmet>
             <Sidebar
