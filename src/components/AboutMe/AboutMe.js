@@ -22,7 +22,9 @@ const AboutMe = ({ id }) => {
                             {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                         </span>{' '}
                         I&apos;m 21 years old. I work as a web developer in
-                        Krakow, Poland. Currently I am working in React.
+                        Krakow, Poland. My focus is mostly on front-end (in
+                        React), but I also know the basics of back-end
+                        development and am always excited to learn more!
                     </p>
                     <p>
                         I love creating clean, concise and beautiful code. Fell
