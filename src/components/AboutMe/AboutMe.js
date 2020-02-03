@@ -17,7 +17,7 @@ const AboutMe = ({ id }) => {
                     <p>
                         {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                         Hi, I&apos;m Szymon{' '}
-                        <span role="img" aria-label="waving hand">
+                        <span role="img" aria-label="waving hand emoji">
                             👋
                             {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                         </span>{' '}
@@ -67,7 +67,10 @@ const AboutMe = ({ id }) => {
                     </ul>
                 </article>
                 <div className={styles.ImageDiv}>
-                    <img src={researchingImage} />
+                    <img
+                        src={researchingImage}
+                        alt="programming - a man and source code"
+                    />
                 </div>
             </section>
         </section>
