@@ -5,7 +5,7 @@ import researchingImage from 'images/researching.svg';
 
 import styles from './AboutMe.module.scss';
 
-const AboutMe = ({ id, data }) => {
+const AboutMe = ({ id }) => {
     return (
         <section className={styles.AboutMe} id={id}>
             <header className={styles.HeaderMotto}>
