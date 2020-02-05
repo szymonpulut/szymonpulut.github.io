@@ -27,30 +27,30 @@ const AboutMe = ({ id }) => {
                         development and am always excited to learn more!
                     </p>
                     <p>
-                        I love creating clean, concise and beautiful code. Fell
-                        in love with JavaScript once, now am navigating through
-                        the depths of React library, paired with TypeScript and
-                        Redux.
+                        I love creating clean, concise and beautiful code. After
+                        falling in love with JavaScript I am navigating through
+                        the depths of React, paired with TypeScript and Redux.
                     </p>
                     <p>
                         In my free time I enjoy brewing and learning about
-                        coffee and doing DIY projects related to computers and
-                        electronics. I&apos;m really proud of creating a custom
-                        smart home system on Raspberry Pi and Arduino based
-                        ESP8266 devices.
+                        coffee. I also am passionate about DIY projects related
+                        to computers and electronics. I&apos;m really proud of
+                        creating a custom smart home system on Raspberry Pi and
+                        Arduino based ESP8266 devices.
                     </p>
                     <p>
-                        My passion for web development began early, when I
-                        started creating websites with WYSIWYG editors. I then
+                        My passion for web development began when I was young -
+                        I started creating websites with WYSIWYG editors. I then
                         moved on to a bit more complex websites in HTML and CSS.
                         Later on I learned basics of PHP and MySQL databases.
-                        Then moved onto Wordpress and Drupal. Finally I started
-                        learning JavaScript which I immensely enjoy.
+                        Then moved onto Wordpress and other CMS, and also
+                        started learning JavaScript which I immensely enjoy.
                     </p>
                     <p>
                         Besides web development I have some experience with
                         programming in C, OOP in Java and C++, and FPGA
-                        programming in Xilinx Vivado toolchain.
+                        programming in Xilinx Vivado toolchain acquired during
+                        my academic studies and further practiced on my own.
                     </p>
                 </article>
                 <article className={styles.Technologies}>
@@ -63,7 +63,9 @@ const AboutMe = ({ id }) => {
                     </ul>
                     I have prior experience with:
                     <ul>
-                        <li>Progressive Web Apps</li>
+                        <li>back end development in PHP & Node.js</li>
+                        <li>databases: MySQL, MongoDb</li>
+                        <li>creating Progressive Web Apps</li>
                         <li>building Android (Java) & iOS (Swift) apps</li>
                         <li>OOP in Java and C++</li>
                     </ul>
