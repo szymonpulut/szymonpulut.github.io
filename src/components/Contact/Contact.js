@@ -18,7 +18,13 @@ const Contact = ({ id }) => {
                         github.com/szymonpulut
                     </a>
                 </p>
-                <p>send me an email: szymon.pulut@gmail.com</p>
+                <p>
+                    {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+                    send me an email:{' '}
+                    <a href="mailto:szymon.pulut@gmail.com">
+                        szymon.pulut@gmail.com
+                    </a>
+                </p>
                 <p>
                     {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                     download my{' '}
