@@ -4,7 +4,7 @@ technologies: 'React, Gatsby, ES6 JavaScript, GraphQL, HTML5, CSS3'
 shortDesc: 'Minimalistic portfolio website showcasing my projects and abilities.'
 priority: 5
 slug: 'personalWebsite'
-headerImage: ./portfolio.png
+headerImage: ./Portfolio.png
 ---
 
 Simple and minimalistic portfolio website to showcase my projects and abilities. Made in React & Gatsby for server-side rendering. Enforced airbnb style guide. I learned a lot about consistent styling and used global SASS mixins. Deployed on GitHub Pages.

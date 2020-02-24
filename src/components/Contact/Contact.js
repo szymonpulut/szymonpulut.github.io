@@ -32,13 +32,6 @@ const Contact = ({ id }) => {
                         resume
                     </a>
                 </p>
-                <p>
-                    {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-                    or maybe check out my{' '}
-                    <a className={styles.Link} href="/">
-                        longer history
-                    </a>
-                </p>
             </article>
         </section>
     );
