@@ -28,7 +28,7 @@ const Contact = ({ id }) => {
                 <p>
                     {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                     download my{' '}
-                    <a className={styles.Link} href="/cv_pulut_szymon.pdf">
+                    <a className={styles.Link} href="pulut-szymon-cv.pdf">
                         resume
                     </a>
                 </p>
