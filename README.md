@@ -2,7 +2,7 @@
 
 ## Description
 
-Simple and minimalistic portfolio website to showcase my projects and abilities. Made in React & Gatsby for server-side rendering. Enforced airbnb style guide. I learned a lot about consistent styling and used global SASS mixins. Deployed on GitHub Pages.
+Simple and minimalistic portfolio website to showcase my projects and abilities. Made in React & Gatsby for server-side rendering. Enforced airbnb style guide. I learned a lot about consistent styling and used global SASS mixins. Deployed on GitHub Pages. Performed performance analysis using tools like Lighthouse audit and [https://webpagetest.org](https://webpagetest.org) to optimise performance (main focus was low First Contentful Paint time).
 
 ## Quick overview
 
