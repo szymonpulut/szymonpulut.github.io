@@ -1,11 +1,19 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 
 import Backdrop from './Backdrop/Backdrop';
 
 import styles from './Modal.module.scss';
 
-const Modal = ({ show, closeModal, inner, projectName, technologies }) => {
+const Modal = ({
+    show,
+    closeModal,
+    inner,
+    headerImage,
+    projectName,
+    technologies,
+}) => {
     const escapeKeyCloseModal = event => {
         if (event.keyCode === 27) {
             closeModal();
@@ -20,6 +28,12 @@ const Modal = ({ show, closeModal, inner, projectName, technologies }) => {
             };
         }, []);
     }
+    const headerImageElement =
+        headerImage == null ? (
+            ''
+        ) : (
+            <Img className={styles.Img} fluid={headerImage} />
+        );
     return (
         <>
             <Backdrop show={show} closeModal={closeModal} />
@@ -33,6 +47,7 @@ const Modal = ({ show, closeModal, inner, projectName, technologies }) => {
                 role="dialog"
                 aria-modal="true"
             >
+                <div className={styles.Image}>{headerImageElement}</div>
                 <h3>{projectName}</h3>
                 <h4>{technologies}</h4>
                 {/* eslint-disable-next-line react/no-danger */}
@@ -43,6 +58,7 @@ const Modal = ({ show, closeModal, inner, projectName, technologies }) => {
 };
 
 Modal.propTypes = {
+    headerImage: PropTypes.objectOf(PropTypes.any).isRequired,
     show: PropTypes.bool,
     closeModal: PropTypes.func.isRequired,
     inner: PropTypes.string,

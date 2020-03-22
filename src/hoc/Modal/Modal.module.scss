@@ -2,6 +2,7 @@
 
 .Modal {
     overflow-y: auto;
+    // overflow-x: hidden;
     position: fixed;
     z-index: 500;
     background-color: $background-color;
@@ -46,4 +47,16 @@
         margin-left: -($width/2);
         margin-top: -($height/2);
     }
+
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        overflow-wrap: break-word;
+    }
+}
+
+.Image {
+    margin-bottom: 7.5%;
 }

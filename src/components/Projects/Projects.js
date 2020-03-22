@@ -71,13 +71,12 @@ const Projects = ({ id }) => {
             headerImage,
         } = edge.node.frontmatter;
 
+        const headerImageFluid =
+            headerImage == null ? '' : headerImage.childImageSharp.fluid;
+
         projects.push(
             <SingleProject
-                headerImage={
-                    headerImage === null
-                        ? ''
-                        : headerImage.childImageSharp.fluid
-                }
+                headerImage={headerImageFluid}
                 projectName={projectName}
                 technologiesUsed={technologies}
                 clicked={() => {
@@ -88,8 +87,10 @@ const Projects = ({ id }) => {
                 {shortDesc}
             </SingleProject>,
         );
+
         projectData = {
             ...projectData,
+            [`headerImage.${slug}`]: headerImageFluid,
             [`projectName.${slug}`]: projectName,
             [`technologies.${slug}`]: technologies,
             [`html.${slug}`]: edge.node.html,
@@ -102,6 +103,7 @@ const Projects = ({ id }) => {
             closeModal={() => {
                 showModalHandler(false);
             }}
+            headerImage={projectData[`headerImage.${currentProjectSlug}`]}
             inner={projectData[`html.${currentProjectSlug}`]}
             projectName={projectData[`projectName.${currentProjectSlug}`]}
             technologies={projectData[`technologies.${currentProjectSlug}`]}
