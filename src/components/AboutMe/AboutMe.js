@@ -21,7 +21,7 @@ const AboutMe = ({ id }) => {
                             👋
                             {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                         </span>{' '}
-                        I&apos;m 21 years old. I work as a web developer in
+                        I&apos;m 21 years old. I am a web developer based in
                         Krakow, Poland. My focus is mostly on front-end (in
                         React), but I also know the basics of back-end
                         development and am always excited to learn more!
@@ -30,6 +30,7 @@ const AboutMe = ({ id }) => {
                         I love creating clean, concise and beautiful code. After
                         falling in love with JavaScript I am navigating through
                         the depths of React, paired with TypeScript and Redux.
+                        Also started looking at react-native :)
                     </p>
                     <p>
                         In my free time I enjoy brewing and learning about
@@ -50,7 +51,8 @@ const AboutMe = ({ id }) => {
                         Besides web development I have some experience with
                         programming in C, OOP in Java and C++, and FPGA
                         programming in Xilinx Vivado toolchain acquired during
-                        my academic studies and further practiced on my own.
+                        my academic studies and further practiced on my own. I
+                        did also learn the basics of coding Android & iOS apps.
                     </p>
                 </article>
                 <article className={styles.Technologies}>
@@ -64,8 +66,8 @@ const AboutMe = ({ id }) => {
                     I have prior experience with:
                     <ul>
                         <li>back end development in PHP & Node.js</li>
-                        <li>databases: MySQL, MongoDb</li>
-                        <li>creating Progressive Web Apps</li>
+                        <li>databases: MySQL, MongoDB</li>
+                        <li>creating PWAs</li>
                         <li>building Android (Java) & iOS (Swift) apps</li>
                         <li>OOP in Java and C++</li>
                     </ul>
