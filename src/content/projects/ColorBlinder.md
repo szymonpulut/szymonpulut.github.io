@@ -15,6 +15,8 @@ User can play game by clicking play button. There are multiple tiles of the same
 
 [https://colorblinder.szymonpulut.com](https://colorblinder.szymonpulut.com)
 
+You have to use developer tools and display it vertically (simulate a phone) and then refresh, for it to display properly. Sorry.
+
 **GitHub repository:**
 
 [https://github.com/szymonpulut/colorblinder](https://github.com/szymonpulut/colorblinder)
