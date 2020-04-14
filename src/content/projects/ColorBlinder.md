@@ -15,7 +15,7 @@ User can play game by clicking play button. There are multiple tiles of the same
 
 [https://colorblinder.szymonpulut.com](https://colorblinder.szymonpulut.com)
 
-You have to use developer tools and display it vertically (simulate a phone) and then refresh, for it to display properly. Sorry.
+In some browsers autoplay of background sound is disabled.
 
 **GitHub repository:**
 
