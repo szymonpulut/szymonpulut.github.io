@@ -1,7 +1,7 @@
 ---
 title: 'ColorBlinder'
 technologies: 'React Native, Expo, React Navigation, TypeScript'
-shortDesc: 'My first React Native app, created with a help of an online tutorial, but extensively further developed on my own.'
+shortDesc: 'My first React Native app, created with help of an online tutorial, but extensively further developed on my own.'
 priority: 7
 slug: 'colorBlinder'
 headerImage: ./ColorBlinder.png
@@ -15,7 +15,7 @@ User can play game by clicking play button. There are multiple tiles of the same
 
 [https://colorblinder.szymonpulut.com](https://colorblinder.szymonpulut.com)
 
-In some browsers autoplay of background sound is disabled.
+App autoplays background music, but in some browsers autoplay of background sound is disabled.
 
 **GitHub repository:**
 
