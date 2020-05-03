@@ -28,8 +28,18 @@ const Contact = ({ id }) => {
                 <p>
                     {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                     download my{' '}
-                    <a className={styles.Link} href="pulut-szymon-cv.pdf">
+                    <a className={styles.Link} href="pulut_szymon_cv.pdf">
                         resume
+                    </a>
+                </p>
+                <p>
+                    {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+                    I also have a{' '}
+                    <a
+                        className={styles.Link}
+                        href="https://www.linkedin.com/in/szymonpulut/"
+                    >
+                        LinkedIn profile
                     </a>
                 </p>
             </article>
