@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import researchingImage from 'images/researching.svg';
+import researchingImage from "images/researching.svg";
 
-import styles from './AboutMe.module.scss';
+import styles from "./AboutMe.module.scss";
 
 const AboutMe = ({ id }) => {
   return (
@@ -16,11 +16,11 @@ const AboutMe = ({ id }) => {
         <article className={styles.Description}>
           <p>
             {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-            Hi, I&apos;m Szymon{' '}
+            Hi, I&apos;m Szymon{" "}
             <span role="img" aria-label="waving hand emoji">
-              &#xe695;
+              &#x1F44B;
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-            </span>{' '}
+            </span>{" "}
             I&apos;m 22 years old. I am a web developer based in Cracow, Poland.
             My focus is mostly on front end (I love React) but I also know the
             basics of devops &amp; back end development and am always excited to
@@ -64,7 +64,8 @@ const AboutMe = ({ id }) => {
             <li>JavaScript &amp; TypeScript</li>
             <li>(advanced) React</li>
             <li>
-              Hooks &amp; Context, React Query, Redux (thunk &amp; basic saga), io-ts
+              Hooks &amp; Context, React Query, Redux (thunk &amp; basic saga),
+              io-ts
             </li>
             <li>Ant Design, Material-UI, styled-components, CSS modules</li>
             <li>Docker, Terraform, CI/CD, cloud services</li>
