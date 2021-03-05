@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "private": true,
-  "description": "My personal website and portfolio - Szymon Pulut (Front End Developer)",
-  "version": "1.0.0",
+  "description": "My personal website and portfolio - Szymon Pulut (Web Developer)",
+  "version": "1.1.0",
   "author": "Szymon Pulut <szymon.pulut@gmail.com>",
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^1.0.43",
