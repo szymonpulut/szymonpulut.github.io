@@ -38,6 +38,8 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "gh-pages": "^2.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5",
     "prettier": "^1.19.1"
   },
   "license": "MIT",
@@ -46,8 +48,14 @@
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint --ext .ts,.tsx src",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,json,css,scss}": [
+      "prettier --write"
+    ]
   }
 }
