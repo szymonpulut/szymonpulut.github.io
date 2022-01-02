@@ -1,9 +1,0 @@
-:export {
-  backgroundColor: #f5f6f7;
-  scrolledHeaderBackgroundColor: #fdfdfd;
-  midpointColor1: #f8f8f9;
-  midpointColor2: #fafbfb;
-  headerHeightMobile: 70px;
-  headerHeightDesktop: 90px;
-  animationLengthLonger: 660ms;
-}

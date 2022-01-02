@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import Backdrop from './Backdrop/Backdrop';
 
-import styles from './Modal.module.scss';
+import * as styles from './Modal.module.scss';
 
 const Modal = ({
     show,
@@ -32,7 +32,7 @@ const Modal = ({
         headerImage == null ? (
             ''
         ) : (
-            <Img className={styles.Img} fluid={headerImage} />
+            <Img className={styles.Image} fluid={headerImage} />
         );
     return (
         <>

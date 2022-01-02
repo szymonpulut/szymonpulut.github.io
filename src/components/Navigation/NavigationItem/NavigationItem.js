@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-scroll';
 
-import globalStyleVariables from 'styles/globalVariables.scss';
-import styles from './NavigationItem.module.scss';
+import * as globalStyleVariables from 'styles/globalVariables.module.scss';
+import * as styles from './NavigationItem.module.scss';
 
 const NavigationItem = ({
     location,

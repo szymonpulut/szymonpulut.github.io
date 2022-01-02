@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Burger.module.scss';
+import * as styles from './Burger.module.scss';
 
 const Burger = ({ clicked, styleClassNames }) => {
     const styleClasses = styleClassNames.map(element => {

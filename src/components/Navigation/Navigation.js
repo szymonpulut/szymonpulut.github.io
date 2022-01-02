@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import NavigationItem from './NavigationItem/NavigationItem';
 
-import styles from './Navigation.module.scss';
+import * as styles from './Navigation.module.scss';
 
 const Navigation = ({ location, sidebarCloseHandler }) => {
     const navigationClasses = [styles.Navigation];
@@ -13,7 +13,7 @@ const Navigation = ({ location, sidebarCloseHandler }) => {
 
     return (
         <div className={navigationClasses.join(' ')}>
-            <ul className={styles.NavigationItems}>
+            <ul>
                 <NavigationItem
                     location={location}
                     sidebarCloseHandler={sidebarCloseHandler}

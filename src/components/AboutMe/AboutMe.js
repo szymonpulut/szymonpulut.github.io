@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import researchingImage from "images/researching.svg";
 
-import styles from "./AboutMe.module.scss";
+import * as styles from "./AboutMe.module.scss";
 
 const AboutMe = ({ id }) => {
   return (

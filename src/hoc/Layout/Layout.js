@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 import Header from 'components/Header/Header';
 import Sidebar from 'components/Sidebar/Sidebar';
 
-import globalStyleVariables from 'styles/globalVariables.scss';
-import styles from './Layout.module.scss';
+import * as globalStyleVariables from 'styles/globalVariables.module.scss';
+import * as styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
     const [pageScrolled, setPageScrolled] = useState(false);

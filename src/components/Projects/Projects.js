@@ -7,7 +7,7 @@ import Modal from 'hoc/Modal/Modal';
 
 import SingleProject from './SingleProject/SingleProject';
 
-import styles from './Projects.module.scss';
+import * as styles from './Projects.module.scss';
 
 const Projects = ({ id }) => {
     const [showModal, setShowModal] = useState(false);
@@ -36,7 +36,7 @@ const Projects = ({ id }) => {
         query {
             allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___priority] }
-                filter: {fileAbsolutePath: {regex: "/(projects)/.*\\.md$/"}}
+                filter: {fileAbsolutePath: {regex: "/(projects)/.*.md$/"}}
                 ) {
                 edges {
                     node {

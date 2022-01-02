@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Navigation from 'components/Navigation/Navigation';
 
-import styles from './Sidebar.module.scss';
+import * as styles from './Sidebar.module.scss';
 
 const Sidebar = ({ isOpen, pageScrolled, closeHandler }) => {
     const sidebarStyleClasses = [styles.Sidebar, styles.Close];
