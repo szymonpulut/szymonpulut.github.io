@@ -19,15 +19,18 @@ const Modal = ({
             closeModal();
         }
     };
-    if (typeof document !== 'undefined') {
-        document.addEventListener('keydown', escapeKeyCloseModal);
 
-        useEffect(() => {
+    useEffect(() => {
+        if (typeof document !== 'undefined') {
+            document.addEventListener('keydown', escapeKeyCloseModal);
+    
             return () => {
                 document.removeEventListener('keydown', escapeKeyCloseModal);
             };
-        }, []);
-    }
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    
     const headerImageElement =
         headerImage == null ? (
             ''
