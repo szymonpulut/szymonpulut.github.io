@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Backdrop from './Backdrop/Backdrop';
 
@@ -30,12 +30,12 @@ const Modal = ({
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    
+
     const headerImageElement =
         headerImage == null ? (
             ''
         ) : (
-            <Img className={styles.Image} fluid={headerImage} />
+            <GatsbyImage className={styles.Image} image={headerImage} />
         );
     return (
         <>

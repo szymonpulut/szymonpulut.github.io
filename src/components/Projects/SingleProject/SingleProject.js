@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import * as styles from './SingleProject.module.scss';
 
@@ -20,7 +20,7 @@ const SingleProject = ({
             tabIndex={-1}
         >
             <div className={styles.Image}>
-                <Img className={styles.Img} fluid={headerImage} />
+                <GatsbyImage className={styles.Img} image={headerImage} />
             </div>
             <div className={styles.ProjectName}>{projectName}</div>
 

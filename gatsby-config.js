@@ -9,8 +9,9 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require("sass"),
+      },
     },
-    },
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
