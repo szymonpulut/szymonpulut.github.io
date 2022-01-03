@@ -1,65 +1,44 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
-import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
 import Header from 'components/Header/Header'
 import Sidebar from 'components/Sidebar/Sidebar'
+import useInWindow from 'hooks/useInWindow'
+import useScrollFadeIn from 'hooks/useScrollFadeIn'
 
-import * as globalStyleVariables from 'styles/globalVariables.module.scss'
 import * as styles from './Layout.module.scss'
 
 const Layout: React.FC = ({ children }) => {
-  const [pageScrolled, setPageScrolled] = useState(false)
   const [isOpenSidebar, setIsOpenSidebar] = useState(false)
-  const [themeColor, setThemeColor] = useState(globalStyleVariables.backgroundColor)
   const [burgerStyleClassNames, setBurgerStyleClassNames] = useState(['Burger'])
 
-  const toggleSidebar = () => {
-    const newState = !isOpenSidebar
-    setIsOpenSidebar(newState)
-    if (typeof document !== 'undefined') {
-      if (newState) {
+  const { pageScrolled, themeColor } = useScrollFadeIn()
+
+  const toggleSidebar = (): void => {
+    const nextStateIsOpenSidebar = !isOpenSidebar
+    setIsOpenSidebar(nextStateIsOpenSidebar)
+
+    useInWindow(() => {
+      if (nextStateIsOpenSidebar) {
         document.body.style.overflow = 'hidden'
       } else {
         document.body.style.overflow = 'auto'
       }
-    }
+    })
   }
 
-  const burgerStyleClassNamesHandler = () => {
-    if (burgerStyleClassNames[1] === undefined) {
+  const burgerStyleTransformation = (): void => {
+    if (!burgerStyleClassNames.includes('Change')) {
       setBurgerStyleClassNames([...burgerStyleClassNames, 'Change'])
     } else {
       setBurgerStyleClassNames(burgerStyleClassNames.slice(0, 1))
     }
   }
 
-  const burgerClickedHandler = () => {
-    burgerStyleClassNamesHandler()
+  const burgerClickedHandler = (): void => {
+    burgerStyleTransformation()
     toggleSidebar()
   }
-
-  useScrollPosition(({ currPos }) => {
-    if (currPos.y < -1 && pageScrolled !== true) {
-      setPageScrolled(true)
-      setThemeColor(globalStyleVariables.midpointColor1)
-      setTimeout(() => {
-        setThemeColor(globalStyleVariables.midpointColor2)
-      }, 100)
-      setTimeout(() => {
-        setThemeColor(globalStyleVariables.scrolledHeaderBackgroundColor)
-      }, 200)
-    } else if (currPos.y === 0) {
-      setPageScrolled(false)
-      setThemeColor(globalStyleVariables.midpointColor2)
-      setTimeout(() => {
-        setThemeColor(globalStyleVariables.midpointColor1)
-      }, 100)
-      setTimeout(() => {
-        setThemeColor(globalStyleVariables.backgroundColor)
-      }, 200)
-    }
-  })
 
   return (
     <div className={styles.Container}>
