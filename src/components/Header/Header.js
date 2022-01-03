@@ -5,7 +5,7 @@ import NavigationItem from 'components/Navigation/NavigationItem/NavigationItem'
 import Navigation from '../Navigation/Navigation';
 import Burger from '../Navigation/Burger/Burger';
 
-import styles from './Header.module.scss';
+import * as styles from './Header.module.scss';
 
 const Header = ({
     pageScrolled,

@@ -7,7 +7,7 @@ import Modal from 'hoc/Modal/Modal';
 
 import SingleProject from './SingleProject/SingleProject';
 
-import styles from './Projects.module.scss';
+import * as styles from './Projects.module.scss';
 
 const Projects = ({ id }) => {
     const [showModal, setShowModal] = useState(false);
@@ -36,7 +36,7 @@ const Projects = ({ id }) => {
         query {
             allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___priority] }
-                filter: {fileAbsolutePath: {regex: "/(projects)/.*\\.md$/"}}
+                filter: {fileAbsolutePath: {regex: "/(projects)/.*.md$/"}}
                 ) {
                 edges {
                     node {
@@ -48,9 +48,7 @@ const Projects = ({ id }) => {
                             shortDesc
                             headerImage {
                                 childImageSharp {
-                                    fluid(maxWidth: 720) {
-                                      ...GatsbyImageSharpFluid
-                                    }
+                                    gatsbyImageData(layout: CONSTRAINED)
                                 }
                             }
                         }
@@ -71,12 +69,12 @@ const Projects = ({ id }) => {
             headerImage,
         } = edge.node.frontmatter;
 
-        const headerImageFluid =
-            headerImage == null ? '' : headerImage.childImageSharp.fluid;
+        const gatsbyImageData =
+            headerImage == null ? '' : headerImage.childImageSharp.gatsbyImageData;
 
         projects.push(
             <SingleProject
-                headerImage={headerImageFluid}
+                headerImage={gatsbyImageData}
                 projectName={projectName}
                 technologiesUsed={technologies}
                 clicked={() => {
@@ -90,7 +88,7 @@ const Projects = ({ id }) => {
 
         projectData = {
             ...projectData,
-            [`headerImage.${slug}`]: headerImageFluid,
+            [`headerImage.${slug}`]: gatsbyImageData,
             [`projectName.${slug}`]: projectName,
             [`technologies.${slug}`]: technologies,
             [`html.${slug}`]: edge.node.html,

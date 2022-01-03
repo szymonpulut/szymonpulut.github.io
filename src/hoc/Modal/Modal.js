@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Backdrop from './Backdrop/Backdrop';
 
-import styles from './Modal.module.scss';
+import * as styles from './Modal.module.scss';
 
 const Modal = ({
     show,
@@ -19,20 +19,23 @@ const Modal = ({
             closeModal();
         }
     };
-    if (typeof document !== 'undefined') {
-        document.addEventListener('keydown', escapeKeyCloseModal);
 
-        useEffect(() => {
+    useEffect(() => {
+        if (typeof document !== 'undefined') {
+            document.addEventListener('keydown', escapeKeyCloseModal);
+    
             return () => {
                 document.removeEventListener('keydown', escapeKeyCloseModal);
             };
-        }, []);
-    }
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
     const headerImageElement =
         headerImage == null ? (
             ''
         ) : (
-            <Img className={styles.Img} fluid={headerImage} />
+            <GatsbyImage className={styles.Image} image={headerImage} />
         );
     return (
         <>

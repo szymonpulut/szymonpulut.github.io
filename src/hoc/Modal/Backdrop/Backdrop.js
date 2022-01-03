@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Backdrop.module.scss';
+import * as styles from './Backdrop.module.scss';
 
 const Backdrop = ({ show, closeModal }) => {
     return show ? (
