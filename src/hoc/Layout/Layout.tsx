@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-import PropTypes from 'prop-types'
 
 import Header from 'components/Header/Header'
 import Sidebar from 'components/Sidebar/Sidebar'
@@ -80,10 +79,6 @@ const Layout: React.FC = ({ children }) => {
       <main className={styles.Main}>{children}</main>
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
