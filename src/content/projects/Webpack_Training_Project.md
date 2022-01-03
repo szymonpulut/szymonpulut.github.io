@@ -11,4 +11,4 @@ A basic webpack project for bundling a React app. Created following a module in 
 
 **GitHub repository:**
 
-[https://github.com/szymonpulut/webpack\_training\_project](https://github.com/szymonpulut/webpack_training_project)
+[https://github.com/szymonpulut/webpack_training_project](https://github.com/szymonpulut/webpack_training_project)

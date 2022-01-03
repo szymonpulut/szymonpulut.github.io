@@ -15,4 +15,4 @@ A basic Node.js todo app. Created following an online course [Node.js tutorial f
 
 **GitHub repository:**
 
-[https://github.com/szymonpulut/nodejs\_training\_project](https://github.com/szymonpulut/nodejs_training_project)
+[https://github.com/szymonpulut/nodejs_training_project](https://github.com/szymonpulut/nodejs_training_project)
