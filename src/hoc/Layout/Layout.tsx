@@ -66,11 +66,10 @@ const Layout: React.FC = ({ children }) => {
       <Helmet>
         <title>Szymon Pulut - Web Developer</title>
         <meta name="theme-color" content={themeColor} />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
       </Helmet>
       <Sidebar isOpen={isOpenSidebar} pageScrolled={pageScrolled} closeHandler={burgerClickedHandler} />
       <Header
-        burgerClickHandler={toggleSidebar}
         isOpenSidebar={isOpenSidebar}
         pageScrolled={pageScrolled}
         burgerClickedHandler={burgerClickedHandler}
