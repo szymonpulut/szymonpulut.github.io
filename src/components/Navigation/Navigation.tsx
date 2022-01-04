@@ -1,22 +1,33 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import NavigationItem from './NavigationItem/NavigationItem'
 
 import * as styles from './Navigation.module.scss'
 
-const Navigation = ({ location, sidebarCloseHandler }) => {
-  const navigationClasses = [styles.Navigation]
+interface Props {
+  location: string
+  sidebarCloseHandler?: () => void
+}
+
+const Navigation: React.FC<Props> = ({ location, sidebarCloseHandler }) => {
+  const navigationStyles = [styles.Navigation]
+
   if (location === 'sidebar') {
-    navigationClasses.push(styles.Navigation_Sidebar)
+    navigationStyles.push(styles.Navigation_Sidebar)
   }
 
   return (
-    <div className={navigationClasses.join(' ')}>
+    <div className={navigationStyles.join(' ')}>
       <ul>
-        <NavigationItem location={location} sidebarCloseHandler={sidebarCloseHandler} target="about-me">
+        <NavigationItem
+          location={location}
+          sidebarCloseHandler={sidebarCloseHandler}
+          target="about-me"
+          shouldChangeOnActive
+        >
           about me
         </NavigationItem>
+
         <NavigationItem
           location={location}
           sidebarCloseHandler={sidebarCloseHandler}
@@ -25,6 +36,7 @@ const Navigation = ({ location, sidebarCloseHandler }) => {
         >
           projects
         </NavigationItem>
+
         <NavigationItem
           location={location}
           sidebarCloseHandler={sidebarCloseHandler}
@@ -36,15 +48,6 @@ const Navigation = ({ location, sidebarCloseHandler }) => {
       </ul>
     </div>
   )
-}
-
-Navigation.propTypes = {
-  location: PropTypes.string.isRequired,
-  sidebarCloseHandler: PropTypes.func,
-}
-
-Navigation.defaultProps = {
-  sidebarCloseHandler: () => {},
 }
 
 export default Navigation

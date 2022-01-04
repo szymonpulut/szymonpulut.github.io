@@ -1,11 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import researchingImage from 'images/researching.svg'
 
 import * as styles from './AboutMe.module.scss'
 
-const AboutMe = ({ id }) => {
+interface Props {
+  id: string
+}
+
+const AboutMe: React.FC<Props> = ({ id }) => {
   return (
     <section className={styles.AboutMe} id={id}>
       <header className={styles.HeaderMotto}>code; clarity; user-experience</header>
@@ -72,10 +75,6 @@ const AboutMe = ({ id }) => {
       </section>
     </section>
   )
-}
-
-AboutMe.propTypes = {
-  id: PropTypes.string.isRequired,
 }
 
 export default AboutMe

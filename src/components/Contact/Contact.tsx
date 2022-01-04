@@ -1,9 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import * as styles from './Contact.module.scss'
 
-const Contact = ({ id }) => {
+interface Props {
+  id: string
+}
+
+const Contact: React.FC<Props> = ({ id }) => {
   return (
     <section className={styles.Contact} id={id}>
       <header className={styles.Header}>contact & resume</header>
@@ -37,10 +40,6 @@ const Contact = ({ id }) => {
       </article>
     </section>
   )
-}
-
-Contact.propTypes = {
-  id: PropTypes.string.isRequired,
 }
 
 export default Contact
