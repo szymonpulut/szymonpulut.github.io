@@ -1,9 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
 
-import * as styles from './Contact.module.scss';
+import * as styles from './Contact.module.scss'
 
-const Contact = ({ id }) => {
+interface Props {
+  id: string
+}
+
+const Contact: React.FC<Props> = ({ id }) => {
   return (
     <section className={styles.Contact} id={id}>
       <header className={styles.Header}>contact & resume</header>
@@ -19,8 +22,7 @@ const Contact = ({ id }) => {
         </p>
         <p>
           {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-          send me an email:{' '}
-          <a href="mailto:szymon.pulut@gmail.com">szymon.pulut@gmail.com</a>
+          send me an email: <a href="mailto:szymon.pulut@gmail.com">szymon.pulut@gmail.com</a>
         </p>
         <p>
           {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
@@ -30,22 +32,14 @@ const Contact = ({ id }) => {
           </a>
         </p>
         <p>
-          {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-          I also have a{' '}
-          <a
-            className={styles.Link}
-            href="https://www.linkedin.com/in/szymonpulut/"
-          >
+          {/* eslint-disable-next-line react/jsx-one-expression-per-line */}I also have a{' '}
+          <a className={styles.Link} href="https://www.linkedin.com/in/szymonpulut/">
             LinkedIn profile
           </a>
         </p>
       </article>
     </section>
-  );
-};
+  )
+}
 
-Contact.propTypes = {
-  id: PropTypes.string.isRequired,
-};
-
-export default Contact;
+export default Contact
