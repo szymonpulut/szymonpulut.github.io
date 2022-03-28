@@ -9,8 +9,8 @@ headerImage: ./TabletDashboardLegacy.png
 
 Tablet Dashboard Legacy is a dashboard for my custom smart home system. Displays current time, date, weather, forecast. Connects to Google's APIs to download Google Calendar. Shows data from smart home sensors (MQTT through WebSockets). Can open main and small gate, plays an audio alert on entrance. Features automatic night and silent mode.
 
-**Written in legacy Javascript, when I didn't have much knowledge or experience - code is not optimal by any means (and looks ugly).** Uses CSS3 grid display, ES5 JS, bits of jQuery. I plan to rewrite it as React app.
+**Written in legacy Javascript, when I didn't have much knowledge or experience - code is not optimal by any means (and looks ugly).** Uses CSS3 grid display, ES5 JS, bits of jQuery. I rewrote it as React app.
 
 **GitHub repository:**
 
-[https://github.com/szymonpulut/TabletDashboard](https://github.com/szymonpulut/TabletDashboard)
+[https://github.com/szymonpulut/TabletDashboard_Legacy](https://github.com/szymonpulut/TabletDashboard_Legacy)

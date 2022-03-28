@@ -2,7 +2,7 @@
 title: 'ColorBlinder'
 technologies: 'React Native, Expo, React Navigation, TypeScript'
 shortDesc: 'My first React Native app, created with help of an online tutorial, but extensively further developed on my own.'
-priority: 7
+priority: 3
 slug: 'colorBlinder'
 headerImage: ./ColorBlinder.png
 ---

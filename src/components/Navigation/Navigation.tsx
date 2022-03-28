@@ -17,7 +17,7 @@ const Navigation: React.FC<Props> = ({ location, sidebarCloseHandler }) => {
   }
 
   return (
-    <div className={navigationStyles.join(' ')}>
+    <div className={navigationStyles.join(' ')} id={location === 'sidebar' ? 'sidebar' : ''}>
       <ul>
         <NavigationItem
           location={location}
