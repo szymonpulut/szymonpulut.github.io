@@ -7,7 +7,7 @@ slug: 'personalWebsite'
 headerImage: ./Portfolio.png
 ---
 
-Simple and minimalistic portfolio website to showcase my projects and abilities. Made in React & Gatsby for server-side rendering. Enforced airbnb style guide. I learned a lot about consistent styling and used global SASS mixins. Deployed on GitHub Pages. Performed performance analysis using tools like Lighthouse audit and [https://webpagetest.org](https://webpagetest.org) to optimise performance (main focus was low First Contentful Paint time).
+Simple and minimalistic portfolio website to showcase my projects and abilities. Made in TypeScript, React & Gatsby for server-side rendering. Enforced airbnb style guide. Deployed on GitHub Pages. Performed performance analysis using tools like Lighthouse audit and [https://webpagetest.org](https://webpagetest.org) to optimise performance (main focus was low First Contentful Paint time).
 
 **Live version:**
 
