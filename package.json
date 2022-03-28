@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "description": "My personal website and portfolio - Szymon Pulut - Frontend Software Engineer",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "Szymon Pulut <szymon.pulut@gmail.com>",
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",

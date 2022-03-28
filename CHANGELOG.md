@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.2.0...v2.3.0) (2022-03-28)
+
+
+### Features
+
+* **projects/portfolio:** updated content ([0112509](https://github.com/szymonpulut/szymonpulut.github.io/commit/0112509a7b18729d35dac884bec2ecd99d58b9d3))
+* **readme:** slightly updated readme ([62218a4](https://github.com/szymonpulut/szymonpulut.github.io/commit/62218a463df63360197d8fffba325c228288190e))
+
 ## [2.2.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.1.0...v2.2.0) (2022-03-28)
 
 
