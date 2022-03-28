@@ -2,7 +2,7 @@
 title: 'Workout Tracker'
 technologies: 'React, Redux (with redux-persist), TypeScript, Material-UI, HTML5, CSS3'
 shortDesc: 'My first real-world React app created to help with remembering my gym workouts and results. In progress, but already past MVP.'
-priority: 6
+priority: 2
 slug: 'workoutTracker'
 headerImage: ./WorkoutTracker.png
 ---

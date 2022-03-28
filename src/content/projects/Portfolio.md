@@ -2,7 +2,7 @@
 title: 'Personal website - portfolio'
 technologies: 'React, Gatsby, ES6 JavaScript, GraphQL, HTML5, CSS3'
 shortDesc: 'Minimalistic portfolio website showcasing my projects and abilities.'
-priority: 5
+priority: 4
 slug: 'personalWebsite'
 headerImage: ./Portfolio.png
 ---

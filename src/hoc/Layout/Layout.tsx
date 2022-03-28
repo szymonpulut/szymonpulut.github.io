@@ -31,7 +31,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Helmet>
-        <title>Szymon Pulut - Web Developer</title>
+        <title>Szymon Pulut - Frontend Software Engineer</title>
         <meta name="theme-color" content={themeColor} />
         <meta charSet="UTF-8" />
       </Helmet>

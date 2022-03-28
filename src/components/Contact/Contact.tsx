@@ -17,8 +17,7 @@ const Contact: React.FC<Props> = ({ id }) => {
           <a className={styles.Link} href="https://github.com/szymonpulut/">
             github.com/szymonpulut
             {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-          </a>{' '}
-          (a bit inactive - last updates before working @ Tango)
+          </a>
         </p>
         <p>
           {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
