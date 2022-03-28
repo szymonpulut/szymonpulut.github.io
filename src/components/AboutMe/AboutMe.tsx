@@ -22,10 +22,10 @@ const AboutMe: React.FC<Props> = ({ id }) => {
               &#x1F44B;
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
             </span>{' '}
-            I&apos;m 23 years old. I am a frontend software engineer based in Cracow, Poland. My focus is mostly on
-            frontend (I love React) but I also know the basics of devops &amp; back end development, and am always
-            excited to learn more! After short journey in native mobile programming in both Java and Swift, I also
-            touched multiplatform mobile app development in React Native.
+            I am a frontend software engineer based in Cracow, Poland. My focus is mostly on frontend (I love React) but
+            I also know the basics of devops &amp; back end development, and am always excited to learn more! After
+            short journey in native mobile programming in both Java and Swift, I also touched multiplatform mobile app
+            development in React Native.
           </p>
           <p>
             I love creating clean, concise and beautiful code. I started programming for fun when I was a child, and to
