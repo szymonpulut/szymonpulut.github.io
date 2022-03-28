@@ -16,9 +16,13 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
 }
 
 exports.createPages = async ({ actions }) => {
-  const { createRedirect } = actions
+  actions.createRedirect({
+    fromPath: '/td-gif/',
+    toPath: 'https://gfycat.com/weakrewardingcaterpillar',
+    statusCode: 200,
+  })
 
-  createRedirect({
+  actions.createRedirect({
     fromPath: '/td-gif/*',
     toPath: 'https://gfycat.com/weakrewardingcaterpillar',
     statusCode: 200,
