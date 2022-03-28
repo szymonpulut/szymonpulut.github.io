@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
+import { clearAllBodyScrollLocks, disableBodyScroll } from 'body-scroll-lock'
 
 import Header from 'components/Header/Header'
 import Sidebar from 'components/Sidebar/Sidebar'
-import useInWindow from 'hooks/useInWindow'
+import useEffectInWindow from 'hooks/useEffectInWindow'
 import useSmoothChangeThemeColorOnScroll from 'hooks/useSmoothChangeThemeColorOnScroll'
 import useIsPageScrolled from 'hooks/useIsPageScrolled'
 
@@ -16,17 +17,21 @@ const Layout: React.FC = ({ children }) => {
   const themeColor = useSmoothChangeThemeColorOnScroll()
 
   const toggleSidebar = (): void => {
-    const nextStateIsOpenSidebar = !isOpenSidebar
-    setIsOpenSidebar(nextStateIsOpenSidebar)
-
-    useInWindow(() => {
-      if (nextStateIsOpenSidebar) {
-        document.body.style.overflow = 'hidden'
-      } else {
-        document.body.style.overflow = 'auto'
-      }
-    })
+    setIsOpenSidebar(isOpenSidebarState => !isOpenSidebarState)
   }
+
+  useEffectInWindow(
+    isOpenSidebar => {
+      const targetElement = document.querySelector('#sidebar')
+
+      if (isOpenSidebar && targetElement) {
+        disableBodyScroll(targetElement, { reserveScrollBarGap: true })
+      } else {
+        clearAllBodyScrollLocks()
+      }
+    },
+    [isOpenSidebar]
+  )
 
   return (
     <>

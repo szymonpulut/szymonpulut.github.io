@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { clearAllBodyScrollLocks, disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 import Modal from 'hoc/Modal/Modal'
-import useInWindow from 'hooks/useInWindow'
+import useEffectInWindow from 'hooks/useEffectInWindow'
 import useAllProjectsQuery from 'queries/useAllProjectsQuery'
 import { SingleProjectModel } from 'models/Projects'
 
@@ -27,15 +27,18 @@ const Projects: React.FC<Props> = ({ id }) => {
     setShowModal(show)
   }
 
-  useInWindow(() => {
-    const targetElement = document.querySelector('#modal')
+  useEffectInWindow(
+    showModal => {
+      const targetElement = document.querySelector('#modal')
 
-    if (showModal && targetElement) {
-      disableBodyScroll(targetElement, { reserveScrollBarGap: true })
-    } else if (targetElement) {
-      enableBodyScroll(targetElement)
-    }
-  })
+      if (showModal && targetElement) {
+        disableBodyScroll(targetElement, { reserveScrollBarGap: true })
+      } else {
+        clearAllBodyScrollLocks()
+      }
+    },
+    [showModal]
+  )
 
   allProjectsQuery.allMarkdownRemark.edges.forEach((edge: any) => {
     const { title: projectName, technologies, slug, shortDesc, headerImage } = edge.node.frontmatter
