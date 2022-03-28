@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.0.1...v2.1.0) (2022-03-28)
+
+
+### Features
+
+* **td gif/redirect:** added a shorthand redirect to tablet dashboard gif ([2ad7892](https://github.com/szymonpulut/szymonpulut.github.io/commit/2ad7892c835a8d4e1ede0b347fd4d8175e96cfbe))
+
 ### [2.0.1](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.0.0...v2.0.1) (2022-01-04)
 
 
