@@ -54,10 +54,10 @@ const AboutMe: React.FC<Props> = ({ id }) => {
           <ul>
             <li>JavaScript &amp; TypeScript</li>
             <li>advanced React</li>
-            <li>Hooks &amp; Context, React Query, Redux (thunk &amp; basic saga), io-ts</li>
-            <li>Ant Design, Material-UI, styled-components, CSS modules</li>
+            <li>Hooks &amp; Context, React Query, Redux, io-ts</li>
+            <li>Ant Design, Material-UI, styled-components</li>
             <li>Docker, Terraform, CI/CD (CircleCI)</li>
-            <li>Cloud services (mainly AWS: S3, CloudFront, Lambda, EC2)</li>
+            <li>Cloud services (AWS: S3, CloudFront, Lambda, EC2)</li>
             <li>HTML5, CSS3</li>
           </ul>
           I have prior experience with:
