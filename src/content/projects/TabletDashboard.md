@@ -1,6 +1,6 @@
 ---
 title: 'Tablet Dashboard'
-technologies: 'TypeScript, React (with custom hooks & context), styled-components, Google API, axios, MQTT'
+technologies: 'TypeScript, React (with custom hooks & context), styled-components, Google API, MQTT'
 shortDesc: 'Powerful dashboard for my smart home project. It is a copy of Tablet Dashboard Legacy, refreshed and rebuilt in React. I focused on using custom hooks with Context API as a replacement for Redux.'
 priority: 5
 slug: 'tabletDashboard'
