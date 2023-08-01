@@ -9,6 +9,7 @@ import useSmoothStateChange from './useSmoothStateChange.hook'
 const FADE_DELAY_PER_STEP_IN_MS = 100
 
 const useSmoothChangeThemeColorOnScroll = () => {
+  console.log('uct called')
   const isPageScrolled = useIsPageScrolled()
 
   const [themeColor, setThemeColor] = useState(
@@ -20,12 +21,14 @@ const useSmoothChangeThemeColorOnScroll = () => {
 
   useEffectInWindow(() => {
     if (isPageScrolled) {
+      console.log('ips')
       const colors: Array<string> = [
         globalStyleVariables.midpointColor1,
         globalStyleVariables.midpointColor2,
         globalStyleVariables.scrolledHeaderBackgroundColor,
       ]
 
+      console.log('smooth changing', colors)
       performSmoothStateChange({
         stateValues: colors,
         stepDelayInMs: FADE_DELAY_PER_STEP_IN_MS,
@@ -37,6 +40,7 @@ const useSmoothChangeThemeColorOnScroll = () => {
         globalStyleVariables.backgroundColor,
       ]
 
+      console.log('smooth changing', colors)
       performSmoothStateChange({
         stateValues: colors,
         stepDelayInMs: FADE_DELAY_PER_STEP_IN_MS,
