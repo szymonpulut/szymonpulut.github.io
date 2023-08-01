@@ -5,7 +5,7 @@
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error"
   },
-
+  "ignorePatterns": ["next.config.js"],
   "overrides": [
     // Override "simple-import-sort" config
     {
