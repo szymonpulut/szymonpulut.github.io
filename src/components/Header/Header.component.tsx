@@ -20,7 +20,6 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
 }) => {
   const { location: currentLocation, path: currentPath } = useCurrentLocation()
   const isPageScrolled = useIsPageScrolled()
-  console.log('in comp', isPageScrolled)
 
   const headerStyles = classNames({
     [styles.PageHeader]: true,
