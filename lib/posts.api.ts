@@ -1,6 +1,6 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import { join } from 'path'
+import path, { join } from 'path'
 
 import { ParametersWithPagination } from '@/src/types/pagination.types'
 import type { Post } from '@/src/types/post.types'
@@ -9,7 +9,8 @@ import markdownToHtml from '@/src/utils/markdownToHtml.util'
 const POSTS_DIRECTORY = join(process.cwd(), '_posts')
 
 export const getPostSlugs = async () => {
-  return await fs.promises.readdir(POSTS_DIRECTORY)
+  const files = await fs.promises.readdir(POSTS_DIRECTORY)
+  return files.filter((file) => path.extname(file) === '.md')
 }
 
 export const getPostBySlug = async <K extends keyof Post>({
