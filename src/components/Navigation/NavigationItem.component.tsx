@@ -1,18 +1,12 @@
 import React from 'react'
 import classNames from 'classnames'
-import { Roboto_Mono } from 'next/font/google'
 import Link from 'next/link'
 
+import { latoFont, robotoMonoFont } from '@/app/fonts'
 import useIsPageScrolled from '@/src/hooks/useIsPageScrolled.hook'
 import type { NavigationItemLocation } from '@/src/types/navigation.types'
 
 import styles from './NavigationItem.component.module.scss'
-
-const robotoMonoFont = Roboto_Mono({
-  weight: '700',
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 interface Props {
   children?: React.ReactNode
@@ -41,6 +35,7 @@ const NavigationItemComponent: React.FC<Props> = ({
 
   const buttonStyles = classNames({
     [styles.Button]: location !== 'header-name',
+    [latoFont.className]: location !== 'header-name',
     [styles.Button_NoStyle]: location === 'header-name',
     [robotoMonoFont.className]: location === 'header-name',
     [styles.Button_FullScreen]: location === 'full-screen',
