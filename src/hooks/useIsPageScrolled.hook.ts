@@ -13,21 +13,26 @@ const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
     setIsPageScrolled(window.scrollY > 0)
   }, [])
 
+  // Trailing throttle - function is called at the end of the throttling period
+  // Guarantees that the last update will be posted
   useEffectInWindow(() => {
+    let timerId: ReturnType<typeof setTimeout> | null = null
+
     const handleScroll = () => {
       const now = Date.now()
       const timeSinceLastInvocation = now - lastInvocationTimeRef.current
 
       if (timeSinceLastInvocation > throttleTimeInMs) {
-        const currentScrollY = window.scrollY
-
-        if (currentScrollY > 0) {
-          setIsPageScrolled(true)
-        } else {
-          setIsPageScrolled(false)
-        }
-
         lastInvocationTimeRef.current = now
+        setIsPageScrolled(window.scrollY > 0)
+      } else {
+        timerId && clearTimeout(timerId)
+
+        // Schedule a new invocation - trailing
+        timerId = setTimeout(() => {
+          lastInvocationTimeRef.current = now
+          setIsPageScrolled(window.scrollY > 0)
+        }, throttleTimeInMs - timeSinceLastInvocation)
       }
     }
 
@@ -36,6 +41,9 @@ const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
     return () => {
       setIsPageScrolled(false)
       window.removeEventListener('scroll', handleScroll)
+      if (timerId) {
+        clearTimeout(timerId)
+      }
     }
   }, [])
 
