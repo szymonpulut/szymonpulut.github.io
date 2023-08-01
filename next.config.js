@@ -15,8 +15,8 @@ if (isGithubActions) {
 
 const nextConfig = {
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
-  assetPrefix,
-  basePath
+  assetPrefix: assetPrefix,
+  basePath: basePath
 }
 
 module.exports = nextConfig
