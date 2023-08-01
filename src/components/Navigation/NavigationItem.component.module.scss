@@ -3,12 +3,13 @@
 .NavigationItem {
   box-sizing: border-box;
 }
-.Button {
+
+// Increase specificity to make sure font-weight is overriden
+.Button.Button {
   color: #32d176;
 
-  font-family: 'Lato';
   font-size: 0.8em;
-  font-weight: bold;
+  font-weight: 900;
   text-decoration: none;
 
   display: block;
