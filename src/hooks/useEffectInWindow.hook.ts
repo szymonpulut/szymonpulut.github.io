@@ -1,4 +1,5 @@
-import { DependencyList, EffectCallback, useEffect } from 'react'
+import type { DependencyList, EffectCallback } from 'react'
+import { useEffect } from 'react'
 
 import isBrowser from '../utils/isBrowser.util'
 

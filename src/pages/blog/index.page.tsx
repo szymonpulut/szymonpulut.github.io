@@ -1,4 +1,4 @@
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 import { getAllPostsPaginated } from '@/lib/posts.api'
 

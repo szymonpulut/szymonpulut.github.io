@@ -1,4 +1,4 @@
-import { Post } from './post.types'
+import type { Post } from './post.types'
 
 interface PaginationParameters {
   pageNumber: number

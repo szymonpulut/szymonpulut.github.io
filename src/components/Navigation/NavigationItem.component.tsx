@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import classNames from 'classnames'
 import { Roboto_Mono } from 'next/font/google'
 import Link from 'next/link'
 
 import useIsPageScrolled from '@/src/hooks/useIsPageScrolled.hook'
-import { NavigationItemLocation } from '@/src/types/navigation.types'
+import type { NavigationItemLocation } from '@/src/types/navigation.types'
 
 import styles from './NavigationItem.component.module.scss'
 

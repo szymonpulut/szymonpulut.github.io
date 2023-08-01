@@ -1,4 +1,4 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 
 import { getAboutMeData, getContactData } from '@/lib/content.api'
 

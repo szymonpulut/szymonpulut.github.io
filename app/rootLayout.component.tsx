@@ -6,7 +6,6 @@ import HeaderComponent from '@/src/components/Header/Header.component'
 import FullScreenNavigation from '@/src/components/Navigation/FullScreenNavigation.component'
 import useBodyScrollLock from '@/src/hooks/useBodyScrollLock.hook'
 import useEffectInWindow from '@/src/hooks/useEffectInWindow.hook'
-import useIsPageScrolled from '@/src/hooks/useIsPageScrolled.hook'
 import useSmoothChangeThemeColorOnScroll from '@/src/hooks/useSmoothChangeThemeColorOnScroll.hook'
 import globalStyleVariables from '@/src/styles/globalVariables.module.scss'
 

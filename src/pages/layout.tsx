@@ -1,7 +1,7 @@
 import RootLayoutComponent from '@/app/rootLayout.component'
 
 const getTitle = (prependTitle?: string) =>
-  !!prependTitle ? `${prependTitle} - Szymon Pulut` : 'Szymon Pulut'
+  prependTitle ? `${prependTitle} - Szymon Pulut` : 'Szymon Pulut'
 
 interface PageLayoutProps {
   children?: React.ReactNode

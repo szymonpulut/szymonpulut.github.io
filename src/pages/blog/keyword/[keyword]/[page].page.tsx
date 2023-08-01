@@ -1,4 +1,4 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 
 import { getAllPosts, getPostsByKeyword } from '@/lib/posts.api'
 import PostListComponent from '@/src/components/BlogPage/PostList/PostList.component'
