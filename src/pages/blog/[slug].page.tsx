@@ -7,7 +7,7 @@ import {
 } from '@/lib/posts.api'
 import SinglePostComponent from '@/src/components/BlogPage/SinglePost/SinglePost.component'
 
-import PageLayout from '../layout.page'
+import PageLayout from '../layout'
 
 import { MORE_POSTS_SIZE } from './[slug].const'
 

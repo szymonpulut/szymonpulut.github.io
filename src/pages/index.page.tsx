@@ -5,7 +5,7 @@ import { getAboutMeData, getContactData } from '@/lib/content.api'
 import AboutMeComponent from '../components/HomePage/AboutMe.component'
 import ContactComponent from '../components/HomePage/Contact.component'
 
-import PageLayout from './layout.page'
+import PageLayout from './layout'
 
 import styles from './index.page.module.scss'
 

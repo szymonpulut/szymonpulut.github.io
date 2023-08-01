@@ -1,4 +1,4 @@
-@import './globalVariables.scss';
+@import './globalVariables.module.scss';
 
 @mixin header {
   font-family: $header-font-family;

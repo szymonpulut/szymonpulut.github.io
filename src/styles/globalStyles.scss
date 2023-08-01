@@ -1,12 +1,9 @@
-@import './globalVariables.scss';
+@import './globalVariables.module.scss';
 @import './globalMixins.scss';
-
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Mono:700|Roboto:100,300,400&display=swap');
 
 html,
 body {
   margin: 0;
-  font-family: Lato;
   line-height: 1.5;
   background-color: $background-color;
 
