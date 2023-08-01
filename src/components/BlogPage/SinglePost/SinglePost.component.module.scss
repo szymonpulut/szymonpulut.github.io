@@ -1,0 +1,41 @@
+@import '@/src/styles/globalMixins.scss';
+
+.HorizontalRule {
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #a9a9a9,
+    transparent
+  );
+  border: 0;
+  height: 1px;
+
+  margin: 64px 0;
+}
+
+.Title {
+  font-size: 1.5em;
+
+  @media (min-width: $media-breakpoint-2) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: $media-breakpoint-3) {
+    font-size: 2em;
+  }
+
+  @media (min-width: $media-breakpoint-4) {
+    font-size: 2.25em;
+  }
+}
+
+.Header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.Category {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}

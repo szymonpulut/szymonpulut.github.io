@@ -1,37 +1,73 @@
-@import './globalVariables.module.scss';
+@import './globalVariables.scss';
 @import './globalMixins.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Mono:700|Roboto:100,300,400&display=swap');
 
 html,
 body {
-    margin: 0;
-    font-family: Lato;
-    line-height: 1.5;
-    background-color: $background-color;
+  margin: 0;
+  font-family: Lato;
+  line-height: 1.5;
+  background-color: $background-color;
 
-    @media (min-width: $media-breakpoint-4) {
-        font-size: 1.008rem;
-        line-height: 1.6;
-    }
+  @media (min-width: $media-breakpoint-4) {
+    font-size: 1.008rem;
+    line-height: 1.6;
+  }
+
+  scroll-behavior: smooth !important;
+
+  height: 100%;
 }
 
 body,
 div#root {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #f5f5f5;
+main {
+  padding: 0 16px;
+
+  @media (min-width: $media-breakpoint-1) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: $media-breakpoint-2) {
+    padding: 0 64px;
+  }
+
+  @media (min-width: $media-breakpoint-3) {
+    padding: 0 128px;
+  }
+}
+
+html {
+  scrollbar-width: auto;
+  scrollbar-color: #ff4248 #f5f5f5;
+
+  // Always reserve place for scrollbar to prevent layout shifts
+  // Calculate the difference between the viewport's width (100vw), which includes the scrollbar, and the body's width (100%), which does not
+  // This difference is equal to the width of the scrollbar (or zero if there is no scrollbar)
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+#__next {
+  display: flex;
+  justify-content: center;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #f5f5f5;
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ff4248;
+  background-color: #ff4248;
 }

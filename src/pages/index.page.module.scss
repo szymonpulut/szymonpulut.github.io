@@ -1,0 +1,7 @@
+@import '@/src/styles/globalMixins.scss';
+
+.Container {
+  @include mainContainer;
+
+  justify-self: center;
+}

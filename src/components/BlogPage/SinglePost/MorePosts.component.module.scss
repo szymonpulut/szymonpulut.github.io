@@ -1,0 +1,42 @@
+@import '@/src/styles/globalMixins.scss';
+
+.List {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  padding-left: 0px; // Unset ul padding
+
+  @media (min-width: $media-breakpoint-2) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $media-breakpoint-3) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $media-breakpoint-4) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.Article {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.Title {
+  grid-row: 1;
+}
+
+.Excerpt {
+  grid-row: 2;
+  align-self: start;
+  text-align: justify;
+}
+
+.ReadMore {
+  grid-row: 3;
+
+  color: #000;
+}
