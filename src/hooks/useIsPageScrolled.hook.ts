@@ -12,7 +12,10 @@ const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
 
   const lastInvocationTimeRef = useRef(Date.now())
 
+  console.log('use ispy')
+
   useEffectInWindow(() => {
+    console.log('useeffinw')
     const handleScroll = () => {
       const now = Date.now()
       const timeSinceLastInvocation = now - lastInvocationTimeRef.current
@@ -30,9 +33,11 @@ const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
       }
     }
 
+    console.log('add event')
     window.addEventListener('scroll', handleScroll)
 
     return () => {
+      console.log('remove event')
       setIsPageScrolled(false)
       window.removeEventListener('scroll', handleScroll)
     }
