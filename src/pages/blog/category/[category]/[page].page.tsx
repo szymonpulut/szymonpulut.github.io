@@ -3,7 +3,7 @@ import { InferGetStaticPropsType } from 'next'
 import { getAllPosts, getPostsByCategory } from '@/lib/posts.api'
 import PostListComponent from '@/src/components/BlogPage/PostList/PostList.component'
 
-import PageLayout from '../../../layout.page'
+import PageLayout from '../../../layout'
 
 import { MAX_PAGES, POSTS_PER_PAGE } from './[page].const'
 
