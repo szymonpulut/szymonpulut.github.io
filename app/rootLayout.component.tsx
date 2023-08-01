@@ -27,7 +27,14 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   const [isOpenFullScreenNavigation, setIsOpenFullScreenNavigation] =
     useState(false)
 
-  const themeColor = useSmoothChangeThemeColorOnScroll()
+  const dynamicThemeColor = useSmoothChangeThemeColorOnScroll()
+  const [themeColor, setThemeColor] = useState('#f5f6f7') // replace 'default color' with your actual default color
+
+  useEffectInWindow(() => {
+    if (dynamicThemeColor) {
+      setThemeColor(dynamicThemeColor)
+    }
+  }, [dynamicThemeColor])
 
   const { lockScroll, unlockScroll } = useBodyScrollLock()
 
