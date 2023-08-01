@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import globalStyleVariables from '@/src/styles/globalVariables.module.scss'
 
+import useEffectInWindow from './useEffectInWindow.hook'
 import useIsPageScrolled from './useIsPageScrolled.hook'
 import useSmoothStateChange from './useSmoothStateChange.hook'
 
@@ -17,7 +18,7 @@ const useSmoothChangeThemeColorOnScroll = () => {
     setStateFunction: setThemeColor,
   })
 
-  useEffect(() => {
+  useEffectInWindow(() => {
     if (isPageScrolled) {
       const colors: Array<string> = [
         globalStyleVariables.midpointColor1,
