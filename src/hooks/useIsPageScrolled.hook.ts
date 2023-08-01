@@ -21,13 +21,20 @@ const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
       const timeSinceLastInvocation = now - lastInvocationTimeRef.current
 
       console.log('scrolling', window.scrollY)
-
+      console.log(
+        now,
+        lastInvocationTimeRef.current,
+        now - lastInvocationTimeRef.current,
+      )
+      console.log(timeSinceLastInvocation, throttleTimeInMs)
       if (timeSinceLastInvocation > throttleTimeInMs) {
         const currentScrollY = window.scrollY
-
+        console.log('Asetting')
         if (currentScrollY > 0) {
+          console.log('setting true')
           setIsPageScrolled(true)
         } else {
+          console.log('setting false')
           setIsPageScrolled(false)
         }
 
