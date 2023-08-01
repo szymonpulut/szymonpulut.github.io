@@ -1,4 +1,4 @@
-import { Post, PostWithoutContent } from '@/src/types/post.types'
+import type { Post, PostWithoutContent } from '@/src/types/post.types'
 
 import DateFormatterComponent from '../DateFormatter.component'
 

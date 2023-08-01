@@ -3,7 +3,7 @@
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let assetPrefix = ''
-let basePath = '/'
+let basePath = ''
 
 if (isGithubActions) {
   // trim off `<owner>/`
@@ -16,7 +16,7 @@ if (isGithubActions) {
 const nextConfig = {
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
   assetPrefix: assetPrefix,
-  basePath: basePath
+  basePath: basePath,
 }
 
 module.exports = nextConfig
