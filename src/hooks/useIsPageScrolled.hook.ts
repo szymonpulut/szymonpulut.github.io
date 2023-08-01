@@ -7,12 +7,15 @@ import useEffectInWindow from './useEffectInWindow.hook'
 const DEFAULT_THROTTLE_TIME_IN_MS = 0
 
 const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
-  const onLoadScrollY = isBrowser() ? window.scrollY : 0
-  const [isPageScrolled, setIsPageScrolled] = useState(onLoadScrollY > 0)
+  const [isPageScrolled, setIsPageScrolled] = useState(false)
 
   const lastInvocationTimeRef = useRef(Date.now())
 
   console.log('use ispy')
+
+  useEffectInWindow(() => {
+    setIsPageScrolled(window.scrollY > 0)
+  }, [])
 
   useEffectInWindow(() => {
     console.log('useeffinw')
