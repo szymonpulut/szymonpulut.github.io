@@ -1,4 +1,4 @@
-import { InferGetStaticPropsType } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 
 import { getAllPosts, getPostsByCategory } from '@/lib/posts.api'
 

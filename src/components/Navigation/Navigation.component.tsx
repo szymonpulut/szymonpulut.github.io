@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import classNames from 'classnames'
-import { usePathname } from 'next/navigation'
 
-import useCurrentLocation from '@/src/hooks/useCurrentLocation.hook'
-import { MenuConfig, NavigationPageId } from '@/src/types/navigation.types'
+import type { NavigationPageId } from '@/src/types/navigation.types'
 
 import ScrollSpyComponent from '../ScrollSpy/ScrollSpy.component'
 

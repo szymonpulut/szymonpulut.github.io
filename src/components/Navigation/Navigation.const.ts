@@ -1,4 +1,4 @@
-import { MenuConfig, SingleMenuConfig } from '@/src/types/navigation.types'
+import type { MenuConfig, SingleMenuConfig } from '@/src/types/navigation.types'
 
 const MAIN_PAGE_MENU: SingleMenuConfig = [
   {

@@ -1,6 +1,6 @@
 import { usePathname } from 'next/navigation'
 
-import { NavigationPageId } from '../types/navigation.types'
+import type { NavigationPageId } from '../types/navigation.types'
 
 const useCurrentLocation = (): { location: NavigationPageId; path: string } => {
   const pathname = usePathname()

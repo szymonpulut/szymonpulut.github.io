@@ -2,7 +2,7 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import path, { join } from 'path'
 
-import { ParametersWithPagination } from '@/src/types/pagination.types'
+import type { ParametersWithPagination } from '@/src/types/pagination.types'
 import type { Post } from '@/src/types/post.types'
 import markdownToHtml from '@/src/utils/markdownToHtml.util'
 
