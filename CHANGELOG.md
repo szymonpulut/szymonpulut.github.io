@@ -4,29 +4,26 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [2.3.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.2.0...v2.3.0) (2022-03-28)
 
-
 ### Features
 
-* **projects/portfolio:** updated content ([0112509](https://github.com/szymonpulut/szymonpulut.github.io/commit/0112509a7b18729d35dac884bec2ecd99d58b9d3))
-* **readme:** slightly updated readme ([62218a4](https://github.com/szymonpulut/szymonpulut.github.io/commit/62218a463df63360197d8fffba325c228288190e))
+- **projects/portfolio:** updated content ([0112509](https://github.com/szymonpulut/szymonpulut.github.io/commit/0112509a7b18729d35dac884bec2ecd99d58b9d3))
+- **readme:** slightly updated readme ([62218a4](https://github.com/szymonpulut/szymonpulut.github.io/commit/62218a463df63360197d8fffba325c228288190e))
 
 ## [2.2.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.1.0...v2.2.0) (2022-03-28)
 
-
 ### Features
 
-* **about me:** changed layout margins a bit, adjusted content ([cff86b3](https://github.com/szymonpulut/szymonpulut.github.io/commit/cff86b3bdcc3e6a934ed0b2ed4fc0b5161138a5d))
-* **about me:** updated content slightly ([abdaf5c](https://github.com/szymonpulut/szymonpulut.github.io/commit/abdaf5c24b0e33c717a2e0ab575914bac3c4222a))
-* **contact/links:** open links in new tab ([c23586d](https://github.com/szymonpulut/szymonpulut.github.io/commit/c23586d1c812e26e217434425c923ab3ef315d6d))
-* **content:** updated content ([e324c7c](https://github.com/szymonpulut/szymonpulut.github.io/commit/e324c7c23c922220583c7efe44299bce09f016d0))
-* **project modal:** updated margins to be slimmer ([eb3cdc3](https://github.com/szymonpulut/szymonpulut.github.io/commit/eb3cdc3fae6262550c4da990f9a80ddf1632c10f))
-* **projects:** updated projects description slightly ([ef9e6f6](https://github.com/szymonpulut/szymonpulut.github.io/commit/ef9e6f6bb59268126be06123ebe1210550b0e687))
-
+- **about me:** changed layout margins a bit, adjusted content ([cff86b3](https://github.com/szymonpulut/szymonpulut.github.io/commit/cff86b3bdcc3e6a934ed0b2ed4fc0b5161138a5d))
+- **about me:** updated content slightly ([abdaf5c](https://github.com/szymonpulut/szymonpulut.github.io/commit/abdaf5c24b0e33c717a2e0ab575914bac3c4222a))
+- **contact/links:** open links in new tab ([c23586d](https://github.com/szymonpulut/szymonpulut.github.io/commit/c23586d1c812e26e217434425c923ab3ef315d6d))
+- **content:** updated content ([e324c7c](https://github.com/szymonpulut/szymonpulut.github.io/commit/e324c7c23c922220583c7efe44299bce09f016d0))
+- **project modal:** updated margins to be slimmer ([eb3cdc3](https://github.com/szymonpulut/szymonpulut.github.io/commit/eb3cdc3fae6262550c4da990f9a80ddf1632c10f))
+- **projects:** updated projects description slightly ([ef9e6f6](https://github.com/szymonpulut/szymonpulut.github.io/commit/ef9e6f6bb59268126be06123ebe1210550b0e687))
 
 ### Bug Fixes
 
-* **layout/scroll lock:** fixed issue with non-working scroll lock ([66ba614](https://github.com/szymonpulut/szymonpulut.github.io/commit/66ba6143379afb64e08521eb9b44b7ef3deb0b4c))
-* **td gif redirect:** updated tablet dashboard gif redirect ([6b50cee](https://github.com/szymonpulut/szymonpulut.github.io/commit/6b50cee67a5dc1f7ff83ae13bae8058ccfca63fa))
+- **layout/scroll lock:** fixed issue with non-working scroll lock ([66ba614](https://github.com/szymonpulut/szymonpulut.github.io/commit/66ba6143379afb64e08521eb9b44b7ef3deb0b4c))
+- **td gif redirect:** updated tablet dashboard gif redirect ([6b50cee](https://github.com/szymonpulut/szymonpulut.github.io/commit/6b50cee67a5dc1f7ff83ae13bae8058ccfca63fa))
 
 ## [2.1.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.0.1...v2.1.0) (2022-03-28)
 

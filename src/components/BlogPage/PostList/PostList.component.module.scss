@@ -1,0 +1,28 @@
+.List {
+  article:not(:last-child) {
+    margin-bottom: 64px;
+  }
+
+  ul {
+    padding-left: 0;
+
+    div:is(:last-child) {
+      hr {
+        display: none;
+      }
+    }
+  }
+
+  padding-top: 2%;
+}
+
+.HorizontalRule {
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #a9a9a9,
+    transparent
+  );
+  border: 0;
+  height: 1px;
+}

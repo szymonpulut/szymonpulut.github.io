@@ -1,0 +1,43 @@
+@import '@/src/styles/globalMixins.scss';
+
+.Title {
+  font-size: 1.5em;
+
+  @media (min-width: $media-breakpoint-2) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: $media-breakpoint-3) {
+    font-size: 2em;
+  }
+
+  @media (min-width: $media-breakpoint-4) {
+    font-size: 2.25em;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.Header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.Category {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  color: #000;
+
+  :visited {
+    color: #000;
+  }
+}
+
+.Excerpt {
+  text-align: justify;
+}

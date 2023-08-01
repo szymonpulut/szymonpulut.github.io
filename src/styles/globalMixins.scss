@@ -1,18 +1,45 @@
-@import './globalVariables.module.scss';
+@import './globalVariables.scss';
 
 @mixin header {
-    font-family: $header-font-family;
-    font-size: $header-font-size;
-    font-weight: 100;
-    margin: 1%;
-    text-align: center;
-    margin-bottom: 40px;
+  font-family: $header-font-family;
+  font-size: $header-font-size;
+  font-weight: 100;
+  margin: 1%;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 @mixin container {
-    padding-top: 100px;
-    width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-    font-family: $text-font-family;
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: $text-font-family;
+}
+
+@mixin mainContainer {
+  @include container;
+
+  padding: 0 $padding-horizontal-content-mobile;
+  padding-top: $header-height-mobile;
+
+  @media (min-width: $media-breakpoint-2) {
+    width: 80%;
+
+    padding: 0;
+    padding-top: $header-height-desktop;
+  }
+}
+
+@mixin blogContainer {
+  @include container;
+
+  padding-top: $header-height-mobile + 16px;
+
+  @media (min-width: $media-breakpoint-1) {
+    padding-top: $header-height-desktop + 32px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
