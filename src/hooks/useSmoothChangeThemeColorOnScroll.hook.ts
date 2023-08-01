@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import globalStyleVariables from '@/src/styles/globalVariables.scss'
+import globalStyleVariables from '@/src/styles/globalVariables.module.scss'
 
 import useIsPageScrolled from './useIsPageScrolled.hook'
 import useSmoothStateChange from './useSmoothStateChange.hook'
