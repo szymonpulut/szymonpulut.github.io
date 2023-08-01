@@ -20,6 +20,8 @@ const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
       const now = Date.now()
       const timeSinceLastInvocation = now - lastInvocationTimeRef.current
 
+      console.log('scrolling', window.scrollY)
+
       if (timeSinceLastInvocation > throttleTimeInMs) {
         const currentScrollY = window.scrollY
 
