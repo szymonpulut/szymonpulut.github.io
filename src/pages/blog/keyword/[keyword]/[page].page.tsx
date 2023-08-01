@@ -72,8 +72,8 @@ export const getStaticPaths = async () => {
 
   const keywords = new Set()
 
-  posts.forEach((post) =>
-    post.keywords.forEach((keyword) => keywords.add(keyword)),
+  posts.forEach(
+    (post) => post.keywords?.forEach((keyword) => keywords.add(keyword)),
   )
 
   const paths = Array.from(keywords).flatMap((keyword) =>
