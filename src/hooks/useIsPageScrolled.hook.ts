@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 
 import useEffectInWindow from './useEffectInWindow.hook'
 
-const DEFAULT_THROTTLE_TIME_IN_MS = 0
+const DEFAULT_THROTTLE_TIME_IN_MS = 100
 
 const useIsPageScrolled = (throttleTimeInMs = DEFAULT_THROTTLE_TIME_IN_MS) => {
   const [isPageScrolled, setIsPageScrolled] = useState(false)
