@@ -8,7 +8,7 @@ import type { NavigationItemLocation } from '@/src/types/navigation.types'
 
 import styles from './NavigationItem.component.module.scss'
 
-interface Props {
+interface NavigationItemComponentProps {
   children?: React.ReactNode
   location: NavigationItemLocation
   target: string
@@ -17,7 +17,7 @@ interface Props {
   highlightOnlyWhenPageIsScrolled?: boolean
 }
 
-const NavigationItemComponent: React.FC<Props> = ({
+const NavigationItemComponent: React.FC<NavigationItemComponentProps> = ({
   location,
   target,
   children,
