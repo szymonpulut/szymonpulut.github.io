@@ -13,7 +13,7 @@ import { ContextProviders } from './contextProviders'
 
 import 'src/styles/globalStyles.scss'
 
-const latoFont = Lato({ weight: '400' })
+const latoFont = Lato({ weight: '400', subsets: ['latin'], display: 'swap' })
 
 interface RootLayoutComponentProps {
   children: React.ReactNode

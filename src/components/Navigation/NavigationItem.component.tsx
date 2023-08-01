@@ -8,7 +8,11 @@ import { NavigationItemLocation } from '@/src/types/navigation.types'
 
 import styles from './NavigationItem.component.module.scss'
 
-const robotoMonoFont = Roboto_Mono({ weight: '700' })
+const robotoMonoFont = Roboto_Mono({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 interface Props {
   children?: React.ReactNode
