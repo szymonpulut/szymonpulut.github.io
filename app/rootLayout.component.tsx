@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Lato } from 'next/font/google'
 import Head from 'next/head'
 
 import HeaderComponent from '@/src/components/Header/Header.component'
@@ -10,10 +9,9 @@ import useSmoothChangeThemeColorOnScroll from '@/src/hooks/useSmoothChangeThemeC
 import globalStyleVariables from '@/src/styles/globalVariables.module.scss'
 
 import { ContextProviders } from './contextProviders'
+import { latoFont } from './fonts'
 
 import 'src/styles/globalStyles.scss'
-
-const latoFont = Lato({ weight: '400', subsets: ['latin'], display: 'swap' })
 
 interface RootLayoutComponentProps {
   children: React.ReactNode
