@@ -1,7 +1,7 @@
 import { Lato, Roboto_Mono } from 'next/font/google'
 
 export const latoFont = Lato({
-  weight: '400',
+  weight: ['400', '900'],
   subsets: ['latin'],
   display: 'swap',
 })
