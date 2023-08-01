@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Lato } from 'next/font/google'
 import Head from 'next/head'
 
 import HeaderComponent from '@/src/components/Header/Header.component'
@@ -11,6 +12,8 @@ import useSmoothChangeThemeColorOnScroll from '@/src/hooks/useSmoothChangeThemeC
 import { ContextProviders } from './contextProviders'
 
 import 'src/styles/globalStyles.scss'
+
+const latoFont = Lato({ weight: '400' })
 
 interface RootLayoutComponentProps {
   children: React.ReactNode
@@ -46,6 +49,12 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         <meta charSet="UTF-8" />
 
         <link rel="icon" type="image/x-icon" href="/icon.svg" />
+
+        <style jsx global>{`
+          html {
+            font-family: ${latoFont.style.fontFamily};
+          }
+        `}</style>
       </Head>
 
       <FullScreenNavigation
