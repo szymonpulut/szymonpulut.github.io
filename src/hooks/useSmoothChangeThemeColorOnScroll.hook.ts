@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import globalStyleVariables from '@/src/styles/globalVariables.scss'
+import globalStyleVariables from '@/src/styles/globalVariables.module.scss'
 
 import useEffectInWindow from './useEffectInWindow.hook'
 import useIsPageScrolled from './useIsPageScrolled.hook'
