@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { PostWithoutContent } from '@/src/types/post.types'
+import type { PostWithoutContent } from '@/src/types/post.types'
 
 import styles from './CategoriesList.component.module.scss'
 

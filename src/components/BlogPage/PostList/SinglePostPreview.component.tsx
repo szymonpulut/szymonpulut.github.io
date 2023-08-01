@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { PostWithoutContent } from '@/src/types/post.types'
+import type { PostWithoutContent } from '@/src/types/post.types'
 
 import DateFormatterComponent from '../DateFormatter.component'
 
