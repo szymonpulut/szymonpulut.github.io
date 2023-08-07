@@ -4,14 +4,6 @@
   @include container;
 
   padding-top: 0;
-
-  margin-top: $header-height-mobile;
-  scroll-margin-top: $header-height-mobile;
-
-  @media (min-width: $media-breakpoint-1) {
-    margin-top: $header-height-desktop;
-    scroll-margin-top: $header-height-desktop;
-  }
 }
 
 .Header {
