@@ -6,6 +6,10 @@
 
 // Increase specificity to make sure font-weight is overriden
 .Button.Button {
+  font-weight: 900;
+}
+
+.Button {
   color: #32d176;
 
   font-size: 0.8em;
