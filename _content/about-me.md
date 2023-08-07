@@ -2,28 +2,36 @@
 headerMotto: 'code; clarity; user-experience'
 technologies:
   advanced:
-    - 'JavaScript & TypeScript'
-    - 'advanced React'
-    - 'Hooks & Context, React Query, Redux, io-ts'
-    - 'Ant Design, Material-UI, styled-components'
+    - 'building large scale applications'
+    - 'advanced TypeScript & JavaScript, React'
+    - 'advanced Redux, React Query, Hooks & Context, zod'
+    - 'custom component libraries, Ant Design, Material-UI'
     - 'Docker, Terraform, CI/CD (CircleCI)'
-    - 'Cloud services (AWS: S3, CloudFront, Lambda, EC2)'
-    - 'HTML5, CSS3'
+    - 'cloud services (AWS: S3, CloudFront, Lambda, EC2, Route53)'
+    - 'HTML5 (incl. Canvas), CSS3 (SCSS, CSS-in-JS/styled-components)'
   basic:
-    - 'backend development in PHP & Node.js stacks'
+    - 'backend development & scripting in NodeJS'
     - 'database design, Postgres, MySQL, MongoDB'
     - 'React Native with Expo & PWA'
     - 'building Android (Java) & iOS (Swift) apps'
     - 'OOP in C++ and Java'
-    - 'FPGA programming in C & C++'
+    - 'IoT programming - C/C++'
 ---
 
-Hi, I'm Szymon 👋 I am a frontend software engineer based in Cracow, Poland. My focus is mostly on frontend (I love React) but I also know the basics of devops & back end development, and am always excited to learn more! After short journey in native mobile programming in both Java and Swift, I also touched multiplatform mobile app development in React Native.
+Hi! I am Szymon 👋 I am a frontend software engineer who loves to work at the intersection of code and data. I am based in Poland, but I work remotely, turning the globe into my workspace.
 
-I love creating clean, concise and beautiful code. I started programming for fun when I was a child, and to this day I never stopped - the "fun" part didn't stop either :D I studied computer science at Jagiellonian University in Cracow, where I have learned a lot more than just programming.
+I am passionate about TypeScript and React. I really enjoy building large-scale applications. It is like creating a large, beautiful, and detailed painting; but instead of oils and brushes, I use technology & code (and a keyboard). I am always looking for better techniques and tools, like a painter searching for the perfect brush. I frequently make time to dive into new technologies and explore their capabilities to stay in tune with the always-evolving tech landscape.
 
-In my free time I enjoy brewing coffee. I also am passionate about DIY projects related to computers and electronics. I'm really proud of creating a custom smart home system on Raspberry Pi and Arduino based ESP8266 devices.
+Throughout my career, I have not only developed applications but had the privilege to lead teams of talented engineers. Together, we have built web applications combining aesthetics with performance, delivering seamless user experiences. A very rewarding part of my journey has been taking on architectural planning and design roles in these projects.
 
-My passion for web development began when I was young - I started creating websites with WYSIWYG editors. I moved on to more complex websites in HTML and CSS. Afterwards I learned basics of PHP and MySQL databases. Then I moved onto Wordpress and other CMS, and also started learning JavaScript which I to this day enjoy. I started professional work as a frontend engineer, mostly in TypeScript & React.
+Besides frontend development, I like expanding my skill set. I have been learning Scala and functional programming to broaden my general perspective on software engineering. While trying to become a more versatile engineer, I have also developed backend services using NodeJS. In the more distant past, I experimented with mobile app development and programming IoT devices like Arduino and Raspberry Pi.
 
-Besides web development I have some experience with programming in C, OOP in C++ and Java. I also learned FPGA programming in Xilinx Vivado toolchain during my academic studies which I enjoyed as well. I learned the basics of coding Android & iOS apps in native languages too.
+I am also fascinated by the human part in all of it. And it does not matter whether it is designing user-centric products, fostering efficient teamwork, or mastering CV writing and interview skills - we are only as good as the human on the other side of the process is. Even supercomputers will not help us ;)
+
+I love sharing knowledge and contributing to the tech community. I really enjoy giving talks and presentations, however currently for small groups of people.
+
+I'm fluent in Polish and English, and I'm brushing up on my German. I believe in friendly yet clear and concise communication, whether it's in a code review or a casual chat.
+
+If you are interested in what I do, or want to discuss the latest tech trends, feel free to reach out. I am always open to meeting new people and taking on challenges!
+
+Welcome to my corner of the digital world :)
