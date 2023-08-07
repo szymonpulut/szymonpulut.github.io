@@ -50,7 +50,7 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
           </a>
         </p>
         <p>
-          I also have a{' '}
+          visit my{' '}
           <a
             className={styles.Link}
             href={linkedinUrl}
