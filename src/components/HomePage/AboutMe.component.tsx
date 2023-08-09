@@ -24,7 +24,7 @@ const AboutMeComponent: React.FC<AboutMeComponentProps> = ({
           <div dangerouslySetInnerHTML={{ __html: description }} />
         </article>
         <article className={styles.Technologies}>
-          I am comfortable with:
+          I feel comfortable with:
           <ul>
             {technologies.advanced.map((tech, index) => (
               <li key={index}>{tech}</li>
