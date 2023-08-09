@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import Image from 'next/image'
 
 import Burger from '@/src/components/Navigation/Burger.component'
 import Navigation from '@/src/components/Navigation/Navigation.component'
@@ -34,7 +35,16 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
       <header className={styles.Name}>
         <ul>
           <NavigationItem location="header-name" target="/">
-            szymon pulut
+            szymon
+            <Image
+              className={styles.Avatar}
+              alt="my photo - avatar"
+              width={0}
+              height={0}
+              src="/images/me.jpg"
+              sizes="100%"
+            />
+            pulut
           </NavigationItem>
         </ul>
       </header>
