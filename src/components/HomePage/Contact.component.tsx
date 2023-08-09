@@ -22,14 +22,14 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
       <header className={styles.Header}>contact & resume</header>
       <article className={styles.Article}>
         <p>
-          my github profile:{' '}
+          my GitHub profile:{' '}
           <a
             className={styles.Link}
             href={githubUrl}
             target="_blank"
             rel="noreferrer"
           >
-            {githubUrl}
+            github.com/szymonpulut
           </a>
         </p>
         <p>
