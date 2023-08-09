@@ -1,7 +1,6 @@
 @import './globalVariables.module.scss';
 
 @mixin header {
-  font-family: $header-font-family;
   font-size: $header-font-size;
   font-weight: 100;
 

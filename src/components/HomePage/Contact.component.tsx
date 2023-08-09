@@ -1,4 +1,7 @@
 import React from 'react'
+import classNames from 'classnames'
+
+import { robotoFont } from '@/app/fonts'
 
 import styles from './Contact.component.module.scss'
 
@@ -17,9 +20,11 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
   resumeUrl,
   linkedinUrl,
 }) => {
+  const headerStyles = classNames([styles.Header, robotoFont.className])
+  
   return (
     <section className={styles.Contact} id={id}>
-      <header className={styles.Header}>contact & resume</header>
+      <header className={headerStyles}>contact & resume</header>
       <article className={styles.Article}>
         <p>
           my GitHub profile:{' '}
