@@ -1,4 +1,7 @@
+import classNames from 'classnames'
 import Image from 'next/image'
+
+import { robotoFont } from '@/app/fonts'
 
 import styles from './AboutMe.component.module.scss'
 
@@ -15,10 +18,13 @@ const AboutMeComponent: React.FC<AboutMeComponentProps> = ({
   description,
   technologies,
 }) => {
+  const headerMottoStyles = classNames([styles.HeaderMotto, robotoFont.className])
+  const headerStyles = classNames([styles.Header, robotoFont.className])
+
   return (
     <section className={styles.AboutMe} id={id}>
-      <header className={styles.HeaderMotto}>{headerMotto}</header>
-      <header className={styles.Header}>about me</header>
+      <header className={headerMottoStyles}>{headerMotto}</header>
+      <header className={headerStyles}>about me</header>
       <section className={styles.Content}>
         <article className={styles.Description}>
           <div dangerouslySetInnerHTML={{ __html: description }} />
