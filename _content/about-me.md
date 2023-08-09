@@ -3,34 +3,32 @@ headerMotto: 'code; clarity; user-experience'
 technologies:
   advanced:
     - 'building large scale applications'
-    - 'advanced TypeScript & JavaScript, React'
-    - 'advanced Redux, React Query, Hooks & Context, zod'
-    - 'custom component libraries, Ant Design, Material-UI'
-    - 'Docker, Terraform, CI/CD (CircleCI)'
-    - 'cloud services (AWS: S3, CloudFront, Lambda, EC2, Route53)'
-    - 'HTML5 (incl. Canvas), CSS3 (SCSS, CSS-in-JS/styled-components)'
+    - 'advanced TypeScript & JavaScript, build tools'
+    - 'advanced React, incl. performance optimization'
+    - 'advanced Redux, RxJS, React Query, zod/io-ts'
+    - 'testing: RTL, Cypress, Playwright, WebDriverIO'
+    - 'component libraries, Ant Design, Material-UI'
+    - 'Docker, Terraform, multiple CI/CD tools'
+    - 'cloud - AWS: S3, CloudFront, Lambda, EC2, R53'
+    - 'HTML5 - incl. Canvas, CSS3 - SCSS, CSS-in-JS/styled-components'
   basic:
-    - 'backend development & scripting in NodeJS'
+    - 'backend development & scripting in Node.js'
     - 'database design, Postgres, MySQL, MongoDB'
-    - 'React Native with Expo & PWA'
+    - 'React Native with Expo & building PWA'
     - 'building Android (Java) & iOS (Swift) apps'
-    - 'OOP in C++ and Java'
-    - 'IoT programming - C/C++'
+    - 'OOP in C++ and Java, FP in Scala'
+    - 'IoT programming (RPi/Arduino) - C/C++'
 ---
 
-Hi! I am Szymon 👋 I am a frontend software engineer who loves to work at the intersection of code and data. I am based in Poland, but I work remotely, turning the globe into my workspace.
+Hi! I am Szymon 👋 I am a frontend software engineer, who loves to work at the intersection of code and data. I am based in Poland, but I work remotely, turning the globe into my workspace.
 
-I am passionate about TypeScript and React. I really enjoy building large-scale applications. It is like creating a large, beautiful, and detailed painting; but instead of oils and brushes, I use technology & code (and a keyboard). I am always looking for better techniques and tools, like a painter searching for the perfect brush. I frequently make time to dive into new technologies and explore their capabilities to stay in tune with the always-evolving tech landscape.
+I really enjoy building large-scale applications. It feels like creating a large, and detailed painting; but instead of oils and brushes, I use technology & code (and a keyboard). My main tools are TypeScript and React. However, I am always looking for better techniques and tools, like a painter searching for the perfect brush. I frequently make time to dive into new technologies and explore their capabilities to stay in tune with the always-evolving tech landscape.
 
-Throughout my career, I have not only developed applications but had the privilege to lead teams of talented engineers. Together, we have built web applications combining aesthetics with performance, delivering seamless user experiences. A very rewarding part of my journey has been taking on architectural planning and design roles in these projects.
+Throughout my career, I have not only developed applications but also had the privilege to lead teams of talented engineers. Together, we have built elgantly designed web applications, delivering user experiences that are both seamless and performant. It has been a very rewarding part of my journey to take on architectural planning and design roles in these projects.
 
-Besides frontend development, I like expanding my skill set. I have been learning Scala and functional programming to broaden my general perspective on software engineering. While trying to become a more versatile engineer, I have also developed backend services using NodeJS. In the more distant past, I experimented with mobile app development and programming IoT devices like Arduino and Raspberry Pi.
+I am passionate about expanding my skill set. I have been learning Scala and functional programming to broaden my general perspective on software engineering. While trying to become a more versatile engineer, I have also developed backend services using NodeJS. In the past, I experimented with programming mobile apps and IoT devices (Arduino and Raspberry Pi).
 
-I am also fascinated by the human part in all of it. And it does not matter whether it is designing user-centric products, fostering efficient teamwork, or mastering CV writing and interview skills - we are only as good as the human on the other side of the process is. Even supercomputers will not help us ;)
-
-I love sharing knowledge and contributing to the tech community. I really enjoy giving talks and presentations, however currently for small groups of people.
-
-I'm fluent in Polish and English, and I'm brushing up on my German. I believe in friendly yet clear and concise communication, whether it's in a code review or a casual chat.
+I am commited to sharing knowledge and contributing to the community, especially via talks and presentations. After all, it does not matter whether it is designing user-centric products, fostering efficient teamwork, or mastering CV writing and interview skills - no matter how effective or impressive our work is, it will only be as successful as our ability to communicate it to others. I believe in friendly yet clear and concise communication, whether it is in a code review or a casual chat.
 
 If you are interested in what I do, or want to discuss the latest tech trends, feel free to reach out. I am always open to meeting new people and taking on challenges!
 
