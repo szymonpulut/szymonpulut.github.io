@@ -47,7 +47,7 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   }, [isOpenFullScreenNavigation])
 
   return (
-    <ContextProviders>
+    <>
       <Head>
         <title>{title}</title>
         <meta property="og:title" content={title} key="title" />
@@ -56,28 +56,25 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         <meta charSet="UTF-8" />
 
         <link rel="icon" type="image/x-icon" href="/icon.svg" />
-
-        <style jsx global>{`
-          html {
-            font-family: ${latoFont.style.fontFamily};
-          }
-        `}</style>
       </Head>
+      <ContextProviders>
+        <div className={latoFont.className} id="root-layout">
+          <FullScreenNavigation
+            handleFullScreenNavigationClose={() =>
+              setIsOpenFullScreenNavigation(false)
+            }
+            isOpen={isOpenFullScreenNavigation}
+          />
 
-      <FullScreenNavigation
-        handleFullScreenNavigationClose={() =>
-          setIsOpenFullScreenNavigation(false)
-        }
-        isOpen={isOpenFullScreenNavigation}
-      />
+          <HeaderComponent
+            isOpenFullScreenNavigation={isOpenFullScreenNavigation}
+            setIsOpenFullScreenNavigation={setIsOpenFullScreenNavigation}
+          />
 
-      <HeaderComponent
-        isOpenFullScreenNavigation={isOpenFullScreenNavigation}
-        setIsOpenFullScreenNavigation={setIsOpenFullScreenNavigation}
-      />
-
-      {children}
-    </ContextProviders>
+          {children}
+        </div>
+      </ContextProviders>
+    </>
   )
 }
 
