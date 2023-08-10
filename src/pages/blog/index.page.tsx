@@ -1,6 +1,7 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 import { getAllPostsPaginated } from '@/lib/posts.api'
+import generateRssFeed from '@/src/utils/generateRssFeed.util'
 
 import { POSTS_PER_PAGE } from './page/[page].const'
 import BlogPage from './page/[page].page'
@@ -19,6 +20,8 @@ const IndexPage: React.FC<IndexPageProps> = ({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  await generateRssFeed()
+
   const { posts, totalPosts } = await getAllPostsPaginated({
     fields: ['categories', 'title', 'date', 'slug', 'excerpt', 'keywords'],
     pageNumber: 1,
