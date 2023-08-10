@@ -56,6 +56,13 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         <meta charSet="UTF-8" />
 
         <link rel="icon" type="image/x-icon" href="/icon.svg" />
+
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Szymon Pulut's blog feed"
+          href="/feed.xml"
+        />
       </Head>
       <ContextProviders>
         <div className={latoFont.className} id="root-layout">
