@@ -40,10 +40,10 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
             <Image
               className={styles.Avatar}
               alt="my photo - avatar"
-              width={0}
-              height={0}
+              width={256}
+              height={256}
               src={avatarPic}
-              sizes="100%"
+              sizes="(max-width: 1078px) 40px (min-width: 1079px) 64px"
               priority
             />
             pulut
