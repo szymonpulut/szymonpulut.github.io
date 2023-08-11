@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
+import avatarPic from '@/public/images/me.jpg'
 import Burger from '@/src/components/Navigation/Burger.component'
 import Navigation from '@/src/components/Navigation/Navigation.component'
 import NavigationItem from '@/src/components/Navigation/NavigationItem.component'
@@ -41,8 +42,9 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
               alt="my photo - avatar"
               width={0}
               height={0}
-              src="/images/me.jpg"
+              src={avatarPic}
               sizes="100%"
+              priority
             />
             pulut
           </NavigationItem>
