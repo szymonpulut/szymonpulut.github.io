@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.3.0...v3.0.0) (2023-08-11)
+
+
+### Features
+
+* **about me:** refactor about me section ([#41](https://github.com/szymonpulut/szymonpulut.github.io/issues/41)) ([e82168c](https://github.com/szymonpulut/szymonpulut.github.io/commit/e82168c80c3457ac2ed5d90970ff2b3618b1bb30))
+* **avatar:** add avatar to header ([#45](https://github.com/szymonpulut/szymonpulut.github.io/issues/45)) ([589c8b2](https://github.com/szymonpulut/szymonpulut.github.io/commit/589c8b249a340f16db4166377b5a990a3449ef7a))
+* content update ([#40](https://github.com/szymonpulut/szymonpulut.github.io/issues/40)) ([302ef5c](https://github.com/szymonpulut/szymonpulut.github.io/commit/302ef5c990e7e301c698f92ebf8c4dfd88919e80))
+* **icon:** icon now adapts to dark mode ([#43](https://github.com/szymonpulut/szymonpulut.github.io/issues/43)) ([aba9a36](https://github.com/szymonpulut/szymonpulut.github.io/commit/aba9a36ddcbe2c37ca0592a707592e8720fd94e3))
+* optimizations ([#49](https://github.com/szymonpulut/szymonpulut.github.io/issues/49)) ([c8b5b0d](https://github.com/szymonpulut/szymonpulut.github.io/commit/c8b5b0dc549bb8415dcc101ee58af5c2c81ec97e))
+* **readme:** updated readme ([#50](https://github.com/szymonpulut/szymonpulut.github.io/issues/50)) ([a0daaf2](https://github.com/szymonpulut/szymonpulut.github.io/commit/a0daaf2c648da05eee4f780526696b51ddc16746))
+* rss feed ([#46](https://github.com/szymonpulut/szymonpulut.github.io/issues/46)) ([4ab8456](https://github.com/szymonpulut/szymonpulut.github.io/commit/4ab845678ed119423c51b3de8b3050e62f87ded8))
+* small layout update ([#42](https://github.com/szymonpulut/szymonpulut.github.io/issues/42)) ([cf7dcb5](https://github.com/szymonpulut/szymonpulut.github.io/commit/cf7dcb5bec423c633bc8abc51c183bfb9183d3f0))
+* **upgrade & next.js migration:** migrated to next.js, major website upgrade ([#31](https://github.com/szymonpulut/szymonpulut.github.io/issues/31)) ([0d4e1e6](https://github.com/szymonpulut/szymonpulut.github.io/commit/0d4e1e698b39c8b745dcaffb59f4774e7e9990b3))
+
+
+### Bug Fixes
+
+* ci/cd ([#33](https://github.com/szymonpulut/szymonpulut.github.io/issues/33)) ([6543b59](https://github.com/szymonpulut/szymonpulut.github.io/commit/6543b59268a881b489b25ec370fd9fd306df64a0))
+* content ([#48](https://github.com/szymonpulut/szymonpulut.github.io/issues/48)) ([24fa4b8](https://github.com/szymonpulut/szymonpulut.github.io/commit/24fa4b8c2e2be1e5e85bc0e97c6b36c158ea4df6))
+* **icon/dark mode:** now properly adapt to dark mode ([#44](https://github.com/szymonpulut/szymonpulut.github.io/issues/44)) ([d0406c0](https://github.com/szymonpulut/szymonpulut.github.io/commit/d0406c0c97f75b2b3b12ddf15a1739c1a00fce5c))
+* **navigation/font:** use bold font for navigation ([#37](https://github.com/szymonpulut/szymonpulut.github.io/issues/37)) ([21b125a](https://github.com/szymonpulut/szymonpulut.github.io/commit/21b125aebd6fa5a9d2861d62925ddc4761738580))
+* rwd ([#47](https://github.com/szymonpulut/szymonpulut.github.io/issues/47)) ([062aaf8](https://github.com/szymonpulut/szymonpulut.github.io/commit/062aaf8d86fe5913083ac4d7d280269afb910ef3))
+* scss & styles ([#34](https://github.com/szymonpulut/szymonpulut.github.io/issues/34)) ([ad23509](https://github.com/szymonpulut/szymonpulut.github.io/commit/ad23509122f9eec12400942de98ee0e2883badbc))
+* small improvements ([#36](https://github.com/szymonpulut/szymonpulut.github.io/issues/36)) ([d8580e7](https://github.com/szymonpulut/szymonpulut.github.io/commit/d8580e7986dde4b1b65593ee5344222f4c41013f))
+* styles & minor bugs ([#39](https://github.com/szymonpulut/szymonpulut.github.io/issues/39)) ([aeae4ee](https://github.com/szymonpulut/szymonpulut.github.io/commit/aeae4eee73845b1d50a7141b9ae2667f60610d50))
+* typescript ([#35](https://github.com/szymonpulut/szymonpulut.github.io/issues/35)) ([808dcfe](https://github.com/szymonpulut/szymonpulut.github.io/commit/808dcfed1a234094543744d7b2685609ece7077b))
+* **useIsPageScrolled:** use trailing throttle instead of normal throttle ([#38](https://github.com/szymonpulut/szymonpulut.github.io/issues/38)) ([ca3d2ab](https://github.com/szymonpulut/szymonpulut.github.io/commit/ca3d2ab250556156c237a27b7450ad3a5c69dae4))
+
 ## [2.3.0](https://github.com/szymonpulut/szymonpulut.github.io/compare/v2.2.0...v2.3.0) (2022-03-28)
 
 ### Features
