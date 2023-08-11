@@ -2,10 +2,10 @@
 headerMotto: 'code; clarity; user-experience'
 technologies:
   advanced:
-    - 'building large scale applications'
+    - 'building large-scale applications'
     - 'advanced TypeScript & JavaScript, build tools'
     - 'advanced React, incl. performance optimization'
-    - 'advanced Redux, RxJS, React Query, zod/io-ts'
+    - 'advanced Redux, RxJS, React Query, Zod/io-ts'
     - 'testing: Jest, RTL, Cypress, Playwright, WDIO'
     - 'component libraries, Ant Design, Material-UI'
     - 'Docker, Terraform, multiple CI/CD tools'
