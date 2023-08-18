@@ -1,4 +1,9 @@
 .Category {
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+
+  color: #000;
+
+  :visited {
+    color: #000;
+  }
 }

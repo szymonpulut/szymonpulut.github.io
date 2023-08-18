@@ -30,20 +30,26 @@ const SinglePostComponent: React.FC<SinglePostComponentProps> = ({
           <DateFormatterComponent dateString={post.date} />
         </div>
 
+        <div className={styles.Excerpt}>{post.excerpt}</div>
+
+        <hr className={styles.HorizontalRule} />
+
         <div
           dangerouslySetInnerHTML={{ __html: post.content }}
           style={{ textAlign: 'justify' }}
         />
 
-        {post.categories && (
-          <CategoriesListComponent categories={post.categories} />
-        )}
-        {post.keywords && <KeywordsListComponent keywords={post.keywords} />}
+        <section className={styles.CategoriesKeywords}>
+          {post.categories && (
+            <CategoriesListComponent categories={post.categories} />
+          )}
+          {post.keywords && <KeywordsListComponent keywords={post.keywords} />}
+        </section>
       </article>
 
       <hr className={styles.HorizontalRule} />
 
-      <MorePostsComponent posts={morePosts} />
+      {morePosts.length > 0 && <MorePostsComponent posts={morePosts} />}
     </>
   )
 }

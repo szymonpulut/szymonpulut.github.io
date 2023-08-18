@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import Image from 'next/image'
 
-import avatarPic from '@/public/images/me.jpg'
+import avatarPic from '@/public/images/me.webp'
 import Burger from '@/src/components/Navigation/Burger.component'
 import Navigation from '@/src/components/Navigation/Navigation.component'
 import NavigationItem from '@/src/components/Navigation/NavigationItem.component'
