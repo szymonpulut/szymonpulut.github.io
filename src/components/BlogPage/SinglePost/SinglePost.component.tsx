@@ -49,7 +49,7 @@ const SinglePostComponent: React.FC<SinglePostComponentProps> = ({
 
       <hr className={styles.HorizontalRule} />
 
-      <MorePostsComponent posts={morePosts} />
+      {morePosts.length > 0 && <MorePostsComponent posts={morePosts} />}
     </>
   )
 }
