@@ -58,6 +58,6 @@ Apart from that, I recently did some job interviews and helped some friends prep
 
 I'll be cross-posting each piece on my [dev.to](https://dev.to/szymonpulut) blog. I'll also share updates on my [LinkedIn](https://linkedin.com/in/szymonpulut/) with each new post. If you're into the old-school vibe, there's always the [RSS feed](https://szymonpulut.com/feed.xml) to keep you in the loop.
 
-## Last words
+## To my Sumo friends
 
 I want to say a heartfelt thank you to all my colleagues at Sumo Logic. Working in such tech-savvy environment has been an incredible experience and learning opportunity. However, this would've been all nothing if not for all the amazing people at Sumo. Thanks! I'm confident our paths will cross again in future 😉.
