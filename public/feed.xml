@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Szymon Pulut's blog feed</title>
+        <link>https://szymonpulut.com</link>
+        <description>Szymon Pulut's personal blog feed featuring latest news on technology, careers, fun stories about cars &amp; motorcycles, as well as random trivia</description>
+        <lastBuildDate>Fri, 18 Aug 2023 10:47:07 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Next.js using Feed</generator>
+        <language>en</language>
+        <copyright>All rights reserved 2023, Szymon Pulut</copyright>
+        <item>
+            <title><![CDATA[Hello World! Welcome to my new site!]]></title>
+            <link>https://szymonpulut.com/blog/hello-world</link>
+            <guid>https://szymonpulut.com/blog/hello-world</guid>
+            <pubDate>Tue, 18 Aug 2020 11:30:00 GMT</pubDate>
+            <description><![CDATA[Hey, it's Szymon! After gaining experience in developing large-scale observability SaaS at Sumo Logic, I made the exciting leap to working on fascinating projects at Microsoft. But guess what? I've dusted off my old blog to chat & share stories. Let's catch up, shall we?]]></description>
+            <category>Personal</category>
+            <category>Technology</category>
+        </item>
+    </channel>
+</rss>
