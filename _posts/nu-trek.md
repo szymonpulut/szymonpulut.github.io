@@ -3,17 +3,17 @@ title: 'Star Trek: Discovery vs. Strange New Worlds - Exploring Two Different Co
 excerpt: "Recently, I revisited the world of Star Trek, watching both 'Star Trek: Discovery' (DISCO) and 'Star Trek: Strange New Worlds' (SNW). DISCO had its moments, but as it progressed, it went down the hill for me. On the other hand, SNW kept me hooked from the start, even getting my non-sci-fi-loving girlfriend on board. Curious about my take on these series and their place in the Star Trek universe? (Warning: Minor spoilers ahead!)"
 date: '2023-09-19T09:30:00.000Z'
 keywords:
-[
-  'Star Trek',
-  'Star Trek: Strange New Worlds',
-  'Star Trek: Discovery',
-  'review',
-  'comparison',
-  'Trekkiness',
-  'Captain Pike',
-  'Anson Mount',
-  'Ethan Peck',
-]
+  [
+    'Star Trek',
+    'Star Trek: Strange New Worlds',
+    'Star Trek: Discovery',
+    'review',
+    'comparison',
+    'Trekkiness',
+    'Captain Pike',
+    'Anson Mount',
+    'Ethan Peck',
+  ]
 categories: ['Reviews', 'Sci-Fi', 'Personal']
 ---
 
