@@ -1,4 +1,6 @@
-import type { PostWithoutContent } from '../../../types/post.types'
+import calculateReadingTime from '@/src/utils/calculateReadingTime.util'
+
+import type { Post } from '../../../types/post.types'
 
 import EmptyPostListComponent from './EmptyPostList.component'
 import PaginationComponent from './Pagination.component'
@@ -7,7 +9,7 @@ import SinglePostPreviewComponent from './SinglePostPreview.component'
 import styles from './PostList.component.module.scss'
 
 interface PostListComponentProps {
-  posts: PostWithoutContent[]
+  posts: Post[]
   currentPage: number
   maxPage: number
   generateLinkToPage: (pageNumber: number) => string
@@ -24,20 +26,25 @@ const PostListComponent: React.FC<PostListComponentProps> = ({
       {posts.length > 0 ? (
         <>
           <ul>
-            {posts.map((post) => (
-              <div key={`${post.slug}-div`}>
-                <SinglePostPreviewComponent
-                  key={post.slug}
-                  categories={post.categories}
-                  title={post.title}
-                  date={post.date}
-                  slug={post.slug}
-                  excerpt={post.excerpt}
-                />
+            {posts.map((post) => {
+              const readingTime = calculateReadingTime(post.content)
 
-                <hr className={styles.HorizontalRule} />
-              </div>
-            ))}
+              return (
+                <div key={`${post.slug}-div`}>
+                  <SinglePostPreviewComponent
+                    key={post.slug}
+                    categories={post.categories}
+                    title={post.title}
+                    date={post.date}
+                    slug={post.slug}
+                    excerpt={post.excerpt}
+                    readingTime={readingTime}
+                  />
+
+                  <hr className={styles.HorizontalRule} />
+                </div>
+              )
+            })}
           </ul>
 
           <PaginationComponent

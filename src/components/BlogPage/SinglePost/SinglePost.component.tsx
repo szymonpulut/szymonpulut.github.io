@@ -1,4 +1,5 @@
 import type { Post, PostWithoutContent } from '@/src/types/post.types'
+import calculateReadingTime from '@/src/utils/calculateReadingTime.util'
 
 import DateFormatterComponent from '../DateFormatter.component'
 
@@ -19,15 +20,21 @@ const SinglePostComponent: React.FC<SinglePostComponentProps> = ({
   post,
   morePosts,
 }) => {
+  const readingTime = calculateReadingTime(post.content)
+
   return (
     <>
       <article>
         <h1 className={styles.Title}>{title}</h1>
 
         <div className={styles.Header}>
-          <span className={styles.Category}>{post.categories?.[0]}</span>
+          <div className={styles.CategoryAndDate}>
+            <span className={styles.Category}>{post.categories?.[0]}</span>
 
-          <DateFormatterComponent dateString={post.date} />
+            <DateFormatterComponent dateString={post.date} />
+          </div>
+
+          <div className={styles.ReadingTime}>{readingTime} min read</div>
         </div>
 
         <div className={styles.Excerpt}>{post.excerpt}</div>
