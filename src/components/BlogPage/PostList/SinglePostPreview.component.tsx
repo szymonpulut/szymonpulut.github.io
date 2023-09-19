@@ -6,7 +6,9 @@ import DateFormatterComponent from '../DateFormatter.component'
 
 import styles from './SinglePostPreview.component.module.scss'
 
-interface SinglePostPreviewComponentProps extends PostWithoutContent {}
+interface SinglePostPreviewComponentProps extends PostWithoutContent {
+  readingTime: number
+}
 
 const SinglePostPreviewComponent: React.FC<SinglePostPreviewComponentProps> = ({
   categories,
@@ -14,6 +16,7 @@ const SinglePostPreviewComponent: React.FC<SinglePostPreviewComponentProps> = ({
   date,
   excerpt,
   slug,
+  readingTime,
 }) => {
   const mainCategory = categories?.[0]
 
@@ -26,15 +29,19 @@ const SinglePostPreviewComponent: React.FC<SinglePostPreviewComponentProps> = ({
       </h1>
 
       <div className={styles.Header}>
-        <Link
-          className={styles.Category}
-          as={`/blog/category/${mainCategory}`}
-          href="/blog/category/[mainCategory]"
-        >
-          {mainCategory}
-        </Link>
+        <div className={styles.CategoryAndDate}>
+          <Link
+            className={styles.Category}
+            as={`/blog/category/${mainCategory}`}
+            href="/blog/category/[mainCategory]"
+          >
+            {mainCategory}
+          </Link>
 
-        <DateFormatterComponent dateString={date} />
+          <DateFormatterComponent dateString={date} />
+        </div>
+
+        <div className={styles.ReadingTime}>{readingTime} min read</div>
       </div>
 
       <p className={styles.Excerpt}>{excerpt}</p>

@@ -23,8 +23,19 @@
 
 .Header {
   display: flex;
+  flex-flow: column;
+}
+
+.CategoryAndDate {
+  display: flex;
   flex-flow: row;
   justify-content: space-between;
+}
+
+.ReadingTime {
+  display: flex;
+  justify-content: flex-end;
+  color: #6c6c6c;
 }
 
 .Category {

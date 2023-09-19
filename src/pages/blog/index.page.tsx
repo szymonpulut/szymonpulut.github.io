@@ -23,7 +23,15 @@ export const getStaticProps: GetStaticProps = async () => {
   await generateRssFeed()
 
   const { posts, totalPosts } = await getAllPostsPaginated({
-    fields: ['categories', 'title', 'date', 'slug', 'excerpt', 'keywords'],
+    fields: [
+      'categories',
+      'title',
+      'date',
+      'slug',
+      'excerpt',
+      'keywords',
+      'content',
+    ],
     pageNumber: 1,
     postsPerPage: POSTS_PER_PAGE,
   })
