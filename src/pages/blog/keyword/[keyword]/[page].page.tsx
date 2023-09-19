@@ -50,7 +50,15 @@ export const getStaticProps = async ({ params }: GetStaticPropsParams) => {
 
   const { posts, totalPosts } = await getPostsByKeyword({
     keyword: params.keyword,
-    fields: ['categories', 'title', 'date', 'slug', 'excerpt', 'keywords'],
+    fields: [
+      'categories',
+      'title',
+      'date',
+      'slug',
+      'excerpt',
+      'keywords',
+      'content',
+    ],
     pageNumber,
     postsPerPage: POSTS_PER_PAGE,
   })

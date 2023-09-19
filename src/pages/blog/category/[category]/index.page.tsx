@@ -33,7 +33,15 @@ interface GetStaticPropsParams {
 export const getStaticProps = async ({ params }: GetStaticPropsParams) => {
   const { posts, totalPosts } = await getPostsByCategory({
     category: params.category,
-    fields: ['categories', 'title', 'date', 'slug', 'excerpt', 'keywords'],
+    fields: [
+      'categories',
+      'title',
+      'date',
+      'slug',
+      'excerpt',
+      'keywords',
+      'content',
+    ],
     pageNumber: 1,
     postsPerPage: POSTS_PER_PAGE,
   })
