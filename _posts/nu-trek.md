@@ -25,6 +25,8 @@ So, let's dive into what sets SNW apart from DISCO and assess their places withi
 
 _Note: This review may contain minor spoilers for Star Trek: Discovery and Star Trek: Strange New Worlds, primarily confined to the pilot episodes._
 
+_Note 2: Star Trek is a series of science fiction movies and TV series, first released in 1966 and continuing to this day. Set in 23rd century, Star Trek focuses on the theme of exploration of the cosmos and seeking out new civilizations._
+
 ## Discovery
 
 DISCO was my gateway into the modern Star Trek productions, leaving a permanent mark on my perspective. Frankly, I have mixed feelings towards "Discovery". If I were to rate it, I'd settle on a solid 6.5 out of 10. Here's why.
@@ -43,7 +45,7 @@ Perhaps the biggest issue among Star Trek fans is how DISCO handles the "sacred"
 
 ### Story
 
-DISCO's storyline revolves around the USS Discovery, a previously unknown Starfleet flagship, introducing multiple captains throughout its course. The series takes on a very dark turn, where it depicts, for the most part, a war-centric narrative. "Discovery" makes significant shift in tone from the classic Star Trek.
+DISCO's storyline revolves around the USS Discovery, a previously unknown Starfleet flagship, introducing multiple captains throughout its course. The series takes on a very dark turn, where it depicts, for the most part, a war-centric narrative. "Discovery" makes a significant shift in tone from the classic Star Trek.
 
 The decision to tightly interlink episodes contributes to this shift, forming the narrative arc centered on the theme of war. Initially, I appreciated how the show presents existential problems within this war storyline. However, as each season concluded with galaxy-threatening events, it quickly began to wear on my engagement. Nevertheless, the initial seasons still offer intriguing and captivating elements.
 
@@ -71,7 +73,7 @@ Some episodes employ traditional Star Trek shooting techniques, evoking a sense 
 
 The story primarily follows the USS Enterprise under Captain Christopher Pike's command. Drawing from the foundations of "Star Trek: The Original Series" (TOS) and glimpses of the future seen in DISCO, we already know that Captain Pike is destined to meet his end in a tragic accident, heroically saving many children, a fact that plays a significant role in the plot.
 
-This element adds depth to the storyline. Pike knowingly undertakes risky missions, confident that his fate won't change. He also contemplates the concept of destiny. Pike questions whether he can alter the course of the future or is he merely an observer on a preordained journey. This twist offers insight into character development, revealing their thought processes, decision-making, and growth.
+This element adds depth to the storyline. Pike knowingly undertakes risky missions, confident that his fate won't change. He also contemplates the concept of destiny. Pike questions whether he can alter the course of the future or if he is merely an observer on a preordained journey. This twist offers insight into character development, revealing their thought processes, decision-making, and growth.
 
 Without revealing spoilers, I won't delve further into plot details. However, I have a preference for slightly longer seasons. Extending the season from 10 episodes to 12 or even 14 episodes would be a good idea. This adjustment would allow for more standalone episodes and deeper character introspection. Nonetheless, I understand that the constraints of modern TV production do not always allow for this - and it doesn't significantly diminish my overall enjoyment of the series.
 
@@ -79,7 +81,7 @@ Without revealing spoilers, I won't delve further into plot details. However, I 
 
 I stumbled upon a comment on the internet that perfectly encapsulates my sentiments. "Discovery" while not flawless, served a crucial role in demonstrating that modern Star Trek can be commercially successful. In many ways, "Strange New Worlds" is the offspring of this endeavor — a refined show that proudly carries forward the best qualities of the originals. Whether you're a newcomer eager to embark on a Star Trek journey or a seasoned fan seeking a pleasant watch, "Strange New Worlds" has you covered.
 
-On the other hand, "Discovery" has unique strengths and it is a series worth exploring - especially after delving into the "Strange New Worlds". Ultimately, the Star Trek universe continues is always expanding. These series contribute their unique flavors to the ever-evolving cosmos of exploration, discovery, and the enduring spirit of humanity reaching for the stars.
+On the other hand, "Discovery" has unique strengths and it is a series worth exploring - especially after delving into the "Strange New Worlds". Ultimately, the Star Trek universe continues and is always expanding. These series contribute their unique flavors to the ever-evolving cosmos of exploration, discovery, and the enduring spirit of humanity reaching for the stars.
 
 If you're eager to explore these series, both are easily approachable for the newbies to the Star Trek universe.
 
