@@ -20,11 +20,6 @@
   }
 }
 
-.Article {
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
 .Title {
   grid-row: 1;
 }

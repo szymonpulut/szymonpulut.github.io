@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 
 import type { PostWithoutContent } from '../../../types/post.types'
@@ -15,7 +16,7 @@ const MorePostsComponent: React.FC<MorePostsComponentProps> = ({ posts }) => {
 
       <ul className={styles.List}>
         {posts.map((post) => (
-          <article key={post.slug} className={styles.Article}>
+          <React.Fragment key={post.slug}>
             <h2 className={styles.Title}>{post.title}</h2>
 
             <p className={styles.Excerpt}>{post.excerpt}</p>
@@ -27,7 +28,7 @@ const MorePostsComponent: React.FC<MorePostsComponentProps> = ({ posts }) => {
             >
               » Read more
             </Link>
-          </article>
+          </React.Fragment>
         ))}
       </ul>
     </section>
