@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import { usePlausible } from 'next-plausible'
 
 import { robotoFont } from '@/app/fonts'
 
@@ -20,8 +21,10 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
   resumeUrl,
   linkedinUrl,
 }) => {
+  const plausible = usePlausible()
+
   const headerStyles = classNames([styles.Header, robotoFont.className])
-  
+
   return (
     <section className={styles.Contact} id={id}>
       <header className={headerStyles}>contact & resume</header>
@@ -33,6 +36,7 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
             href={githubUrl}
             target="_blank"
             rel="noreferrer"
+            onClick={() => plausible('gitHubVisit')}
           >
             github.com/szymonpulut
           </a>
@@ -50,6 +54,7 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
             href={resumeUrl}
             target="_blank"
             rel="noreferrer"
+            onClick={() => plausible('resumeDownload')}
           >
             resume
           </a>
@@ -61,6 +66,7 @@ const ContactComponent: React.FC<ContactComponentProps> = ({
             href={linkedinUrl}
             target="_blank"
             rel="noreferrer"
+            onClick={() => plausible('linkedInVisit')}
           >
             LinkedIn profile
           </a>
