@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import Link from 'next/link'
+import { usePlausible } from 'next-plausible'
 
 import { latoFont, robotoMonoFont } from '@/app/fonts'
 import useIsPageScrolled from '@/src/hooks/useIsPageScrolled.hook'
@@ -25,6 +26,8 @@ const NavigationItemComponent: React.FC<NavigationItemComponentProps> = ({
   isActive = false,
   highlightOnlyWhenPageIsScrolled = false,
 }) => {
+  const plausible = usePlausible()
+
   const isPageScrolled = useIsPageScrolled()
 
   const isHighlightable =
@@ -46,7 +49,10 @@ const NavigationItemComponent: React.FC<NavigationItemComponentProps> = ({
     <li className={styles.NavigationItem}>
       <Link
         className={buttonStyles}
-        onClick={handleFullScreenNavigationClose}
+        onClick={() => {
+          plausible('navigationItemClick', { props: { location, target } })
+          handleFullScreenNavigationClose?.()
+        }}
         href={target}
         scroll={false}
       >
