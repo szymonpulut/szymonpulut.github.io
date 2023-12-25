@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
+import PlausibleProvider from 'next-plausible'
 
 import HeaderComponent from '@/src/components/Header/Header.component'
 import FullScreenNavigation from '@/src/components/Navigation/FullScreenNavigation.component'
@@ -66,21 +67,23 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         />
       </Head>
       <ContextProviders>
-        <div className={latoFont.className} id="root-layout">
-          <FullScreenNavigation
-            handleFullScreenNavigationClose={() =>
-              setIsOpenFullScreenNavigation(false)
-            }
-            isOpen={isOpenFullScreenNavigation}
-          />
+        <PlausibleProvider domain="szymonpulut.com">
+          <div className={latoFont.className} id="root-layout">
+            <FullScreenNavigation
+              handleFullScreenNavigationClose={() =>
+                setIsOpenFullScreenNavigation(false)
+              }
+              isOpen={isOpenFullScreenNavigation}
+            />
 
-          <HeaderComponent
-            isOpenFullScreenNavigation={isOpenFullScreenNavigation}
-            setIsOpenFullScreenNavigation={setIsOpenFullScreenNavigation}
-          />
+            <HeaderComponent
+              isOpenFullScreenNavigation={isOpenFullScreenNavigation}
+              setIsOpenFullScreenNavigation={setIsOpenFullScreenNavigation}
+            />
 
-          {children}
-        </div>
+            {children}
+          </div>
+        </PlausibleProvider>
       </ContextProviders>
     </>
   )
