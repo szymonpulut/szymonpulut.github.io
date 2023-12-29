@@ -1,10 +1,14 @@
-import { Lato, Roboto, Roboto_Mono } from 'next/font/google'
+import { Roboto, Roboto_Mono } from 'next/font/google'
 
-export const latoFont = Lato({
-  weight: ['400', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+// Lato font breaks rendering on large screens, when imported via Next fonts
+// So instead, we're importing it from Google Fonts CDN in CSS directly
+export const latoFont = { className: 'latoFont' }
+
+// export const latoFont = Lato({
+//   weight: ['400', '900'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 
 export const robotoFont = Roboto({
   weight: ['100'],
