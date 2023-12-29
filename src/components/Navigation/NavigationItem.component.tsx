@@ -39,8 +39,10 @@ const NavigationItemComponent: React.FC<NavigationItemComponentProps> = ({
   const buttonStyles = classNames({
     [styles.Button]: location !== 'header-name',
     [latoFont.className]: location !== 'header-name',
+
     [styles.Button_NoStyle]: location === 'header-name',
     [robotoMonoFont.className]: location === 'header-name',
+
     [styles.Button_FullScreen]: location === 'full-screen',
     [styles.Active]: isHighlightable,
   })
