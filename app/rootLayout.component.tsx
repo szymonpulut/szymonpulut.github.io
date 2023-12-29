@@ -11,7 +11,7 @@ import useSmoothChangeThemeColorOnScroll from '@/src/hooks/useSmoothChangeThemeC
 import { ContextProviders } from './contextProviders'
 import { latoFont } from './fonts'
 
-import 'src/styles/globalStyles.scss'
+import '@/src/styles/globalStyles.scss'
 
 interface RootLayoutComponentProps {
   children: React.ReactNode
