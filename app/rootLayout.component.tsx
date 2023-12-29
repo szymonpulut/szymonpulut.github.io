@@ -7,7 +7,6 @@ import FullScreenNavigation from '@/src/components/Navigation/FullScreenNavigati
 import useBodyScrollLock from '@/src/hooks/useBodyScrollLock.hook'
 import useEffectInWindow from '@/src/hooks/useEffectInWindow.hook'
 import useSmoothChangeThemeColorOnScroll from '@/src/hooks/useSmoothChangeThemeColorOnScroll.hook'
-import globalStyleVariables from '@/src/styles/globalVariables.module.scss'
 
 import { ContextProviders } from './contextProviders'
 import { latoFont } from './fonts'
@@ -26,19 +25,12 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   const [isOpenFullScreenNavigation, setIsOpenFullScreenNavigation] =
     useState(false)
 
-  const dynamicThemeColor = useSmoothChangeThemeColorOnScroll()
-  const [themeColor, setThemeColor] = useState(
-    globalStyleVariables.backgroundColor,
-  )
-
-  useEffectInWindow(() => {
-    if (dynamicThemeColor) {
-      setThemeColor(dynamicThemeColor)
-    }
-  }, [dynamicThemeColor])
+  const themeColor = useSmoothChangeThemeColorOnScroll()
 
   const { lockScroll, unlockScroll } = useBodyScrollLock()
 
+  // Technically lockScroll & unlockScroll could've been outside useEffect
+  // But since this is a side-effect, I left it inside
   useEffectInWindow(() => {
     if (isOpenFullScreenNavigation) {
       lockScroll()
