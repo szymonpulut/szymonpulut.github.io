@@ -18,7 +18,10 @@ interface PostPageProps
 
 const PostPage: React.FC<PostPageProps> = ({ post, morePosts }) => {
   return (
-    <PageLayout prependTitle={post.title}>
+    <PageLayout
+      prependTitle={post.title}
+      previewImageUrl={post.previewImageUrl}
+    >
       <main className={styles.Container}>
         <SinglePostComponent
           title={post.title}
@@ -47,6 +50,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsParams) => {
       'slug',
       'content',
       'keywords',
+      'previewImageUrl',
     ],
   })
 
