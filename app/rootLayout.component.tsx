@@ -19,6 +19,7 @@ interface RootLayoutComponentProps {
   title: string
   previewImageUrl?: string
   description?: string
+  articlePublishedDate?: string
 }
 
 const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
@@ -26,6 +27,7 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   title,
   previewImageUrl,
   description,
+  articlePublishedDate,
 }) => {
   const [isOpenFullScreenNavigation, setIsOpenFullScreenNavigation] =
     useState(false)
@@ -79,6 +81,13 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         )}
 
         <meta name="author" content="Szymon Pulut" />
+
+        {articlePublishedDate && (
+          <meta
+            property="article:published_time"
+            content={articlePublishedDate}
+          />
+        )}
 
         <meta name="theme-color" content={themeColor} />
         <meta charSet="UTF-8" />
