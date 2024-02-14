@@ -6,14 +6,19 @@ const getTitle = (prependTitle?: string) =>
 interface PageLayoutProps {
   children?: React.ReactNode
   prependTitle?: string
+  previewImageUrl?: string
 }
 
 const PageLayout: React.FC<PageLayoutProps> = ({
   children,
   prependTitle = '',
+  previewImageUrl,
 }) => {
   return (
-    <RootLayoutComponent title={getTitle(prependTitle)}>
+    <RootLayoutComponent
+      title={getTitle(prependTitle)}
+      previewImageUrl={previewImageUrl}
+    >
       {children}
     </RootLayoutComponent>
   )

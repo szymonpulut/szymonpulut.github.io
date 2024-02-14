@@ -7,6 +7,7 @@ import FullScreenNavigation from '@/src/components/Navigation/FullScreenNavigati
 import useBodyScrollLock from '@/src/hooks/useBodyScrollLock.hook'
 import useEffectInWindow from '@/src/hooks/useEffectInWindow.hook'
 import useSmoothChangeThemeColorOnScroll from '@/src/hooks/useSmoothChangeThemeColorOnScroll.hook'
+import isBrowser from '@/src/utils/isBrowser.util'
 
 import { ContextProviders } from './contextProviders'
 import { latoFont } from './fonts'
@@ -16,11 +17,13 @@ import '@/src/styles/globalStyles.scss'
 interface RootLayoutComponentProps {
   children: React.ReactNode
   title: string
+  previewImageUrl?: string
 }
 
 const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   children,
   title,
+  previewImageUrl,
 }) => {
   const [isOpenFullScreenNavigation, setIsOpenFullScreenNavigation] =
     useState(false)
@@ -39,11 +42,21 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
     }
   }, [isOpenFullScreenNavigation])
 
+  const currentUrl = isBrowser() ? new URL(window.location.href) : null
+  const currentUrlStringified = currentUrl?.toString()
+
   return (
     <>
       <Head>
         <title>{title}</title>
+
         <meta property="og:title" content={title} key="title" />
+        {currentUrlStringified && (
+          <meta property="og:url" content={currentUrlStringified} />
+        )}
+        {previewImageUrl && (
+          <meta property="og:image" content={previewImageUrl} />
+        )}
 
         <meta name="theme-color" content={themeColor} />
         <meta charSet="UTF-8" />
