@@ -18,12 +18,16 @@ interface RootLayoutComponentProps {
   children: React.ReactNode
   title: string
   previewImageUrl?: string
+  description?: string
+  articlePublishedDate?: string
 }
 
 const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   children,
   title,
   previewImageUrl,
+  description,
+  articlePublishedDate,
 }) => {
   const [isOpenFullScreenNavigation, setIsOpenFullScreenNavigation] =
     useState(false)
@@ -50,12 +54,39 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
       <Head>
         <title>{title}</title>
 
-        <meta property="og:title" content={title} key="title" />
+        <meta property="og:title" content={title} key="title" name="title" />
+        {description && (
+          <meta
+            property="og:description"
+            content={description}
+            key="description"
+            name="description"
+          />
+        )}
         {currentUrlStringified && (
-          <meta property="og:url" content={currentUrlStringified} />
+          <meta
+            property="og:url"
+            content={currentUrlStringified}
+            key="url"
+            name="url"
+          />
         )}
         {previewImageUrl && (
-          <meta property="og:image" content={previewImageUrl} />
+          <meta
+            property="og:image"
+            content={previewImageUrl}
+            key="image"
+            name="image"
+          />
+        )}
+
+        <meta name="author" content="Szymon Pulut" />
+
+        {articlePublishedDate && (
+          <meta
+            property="article:published_time"
+            content={articlePublishedDate}
+          />
         )}
 
         <meta name="theme-color" content={themeColor} />
