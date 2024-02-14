@@ -22,6 +22,8 @@ Let's kick things off with a quick peek at the web app — it's all about displa
 
 ![Screenshot of IoT Dashboard](/images/iotdashboard.webp)
 
+If you'd like to visit the repository, the link is here [https://github.com/szymonpulut/IoTDashboard/](https://github.com/szymonpulut/IoTDashboard/).
+
 ## A Bit of Background
 
 This application has been on quite a journey. I first built it a few years ago using pure JavaScript and direct DOM manipulations. Then, as I was learning React in 2019, I felt it was time for a rewrite. This transition marked a significant milestone for me, as it really showcased the power and simplicity of React.
