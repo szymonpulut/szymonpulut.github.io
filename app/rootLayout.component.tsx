@@ -52,15 +52,30 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
       <Head>
         <title>{title}</title>
 
-        <meta property="og:title" content={title} key="title" />
+        <meta property="og:title" content={title} key="title" name="title" />
         {description && (
-          <meta property="og:description" content={description} />
+          <meta
+            property="og:description"
+            content={description}
+            key="description"
+            name="description"
+          />
         )}
         {currentUrlStringified && (
-          <meta property="og:url" content={currentUrlStringified} />
+          <meta
+            property="og:url"
+            content={currentUrlStringified}
+            key="url"
+            name="url"
+          />
         )}
         {previewImageUrl && (
-          <meta property="og:image" content={previewImageUrl} />
+          <meta
+            property="og:image"
+            content={previewImageUrl}
+            key="image"
+            name="image"
+          />
         )}
 
         <meta name="theme-color" content={themeColor} />
