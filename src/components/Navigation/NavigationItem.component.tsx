@@ -56,7 +56,7 @@ const NavigationItemComponent: React.FC<NavigationItemComponentProps> = ({
           handleFullScreenNavigationClose?.()
         }}
         href={target}
-        scroll={false}
+        scroll={true}
       >
         {children}
       </Link>
