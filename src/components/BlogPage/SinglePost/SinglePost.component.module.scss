@@ -29,6 +29,10 @@
   }
 }
 
+.Content * {
+  max-width: 100%;
+}
+
 .Header {
   display: flex;
   flex-flow: column;
