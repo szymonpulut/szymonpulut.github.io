@@ -16,7 +16,7 @@ const MorePostsComponent: React.FC<MorePostsComponentProps> = ({ posts }) => {
 
       <ul className={styles.List}>
         {posts.map((post) => (
-          <React.Fragment key={post.slug}>
+          <div key={post.slug}>
             <h2 className={styles.Title}>{post.title}</h2>
 
             <p className={styles.Excerpt}>{post.excerpt}</p>
@@ -28,7 +28,7 @@ const MorePostsComponent: React.FC<MorePostsComponentProps> = ({ posts }) => {
             >
               » Read more
             </Link>
-          </React.Fragment>
+          </div>
         ))}
       </ul>
     </section>
