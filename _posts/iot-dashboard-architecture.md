@@ -16,6 +16,7 @@ keywords:
     'Personal Project',
   ]
 categories: ['Project', 'Personal', 'Technology']
+previewImageUrl: 'https://szymonpulut.com/iotdashboard.png'
 ---
 
 Let's kick things off with a quick peek at the web app — it's all about displaying a sleek and clutter-free dashboard, somewhat similar in functionality to [Home Assistant](https://www.home-assistant.io/). I intentionally kept the functionality limited to maintain that clean, minimalist design. IoT Dashboard is deployed on a Raspberry Pi and displayed on a simple tablet mounted in my house.
