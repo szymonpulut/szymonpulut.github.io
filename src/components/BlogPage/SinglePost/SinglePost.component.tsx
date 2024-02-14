@@ -42,6 +42,7 @@ const SinglePostComponent: React.FC<SinglePostComponentProps> = ({
         <hr className={styles.HorizontalRule} />
 
         <div
+          className={styles.Content}
           dangerouslySetInnerHTML={{ __html: post.content }}
           style={{ textAlign: 'justify' }}
         />
