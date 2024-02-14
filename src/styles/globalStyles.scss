@@ -1,6 +1,10 @@
 @import './globalVariables.module.scss';
 @import './globalMixins.scss';
 
+#__next {
+  overflow-x: hidden;
+}
+
 html,
 body,
 div#root-layout {
@@ -48,7 +52,7 @@ html {
   // Always reserve place for scrollbar to prevent layout shifts
   // Calculate the difference between the viewport's width (100vw), which includes the scrollbar, and the body's width (100%), which does not
   // This difference is equal to the width of the scrollbar (or zero if there is no scrollbar)
-  margin-left: calc(100vw - 100%);
+  margin-left: calc((100vw - 100%));
   margin-right: 0;
 }
 
@@ -73,12 +77,4 @@ div#root-layout {
 
 .latoFont {
   font-family: 'Lato', sans-serif;
-}
-
-code {
-  background-color: rgba(28, 28, 28, 0.05);
-  color: rgb(226, 32, 90);
-  padding: 2px 3px 1px;
-  border: 1px solid rgba(28, 28, 28, 0.15);
-  border-radius: 3px;
 }
