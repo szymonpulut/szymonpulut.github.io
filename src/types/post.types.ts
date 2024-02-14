@@ -5,6 +5,7 @@ export interface PostWithoutContent {
   date: string
   excerpt: string
   keywords?: string[]
+  previewImageUrl?: string
 }
 
 export interface Post extends PostWithoutContent {
