@@ -21,6 +21,7 @@ const PostPage: React.FC<PostPageProps> = ({ post, morePosts }) => {
     <PageLayout
       prependTitle={post.title}
       previewImageUrl={post.previewImageUrl}
+      description={post.excerpt}
     >
       <main className={styles.Container}>
         <SinglePostComponent

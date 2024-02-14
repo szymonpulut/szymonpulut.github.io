@@ -18,12 +18,14 @@ interface RootLayoutComponentProps {
   children: React.ReactNode
   title: string
   previewImageUrl?: string
+  description?: string
 }
 
 const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
   children,
   title,
   previewImageUrl,
+  description,
 }) => {
   const [isOpenFullScreenNavigation, setIsOpenFullScreenNavigation] =
     useState(false)
@@ -51,6 +53,9 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         <title>{title}</title>
 
         <meta property="og:title" content={title} key="title" />
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
         {currentUrlStringified && (
           <meta property="og:url" content={currentUrlStringified} />
         )}
