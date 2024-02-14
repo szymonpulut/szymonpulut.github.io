@@ -83,10 +83,13 @@ const RootLayoutComponent: React.FC<RootLayoutComponentProps> = ({
         <meta name="author" content="Szymon Pulut" />
 
         {articlePublishedDate && (
-          <meta
-            property="article:published_time"
-            content={articlePublishedDate}
-          />
+          <>
+            <meta
+              property="article:published_time"
+              content={articlePublishedDate}
+            />
+            <time dateTime={articlePublishedDate} />
+          </>
         )}
 
         <meta name="theme-color" content={themeColor} />
