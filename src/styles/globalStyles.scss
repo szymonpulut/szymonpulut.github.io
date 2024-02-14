@@ -1,6 +1,13 @@
 @import './globalVariables.module.scss';
 @import './globalMixins.scss';
 
+// Apparently the following is necessary to prevent horizontal scrolling on mobile devices
+// Because mobile browsers ignore html & body if meta viewport tag is present
+// https://stackoverflow.com/questions/24193272/overflow-xhidden-on-mobile-device-not-working
+#__next {
+  overflow-x: hidden;
+}
+
 html,
 body,
 div#root-layout {
