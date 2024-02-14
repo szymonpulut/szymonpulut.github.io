@@ -74,3 +74,11 @@ div#root-layout {
 .latoFont {
   font-family: 'Lato', sans-serif;
 }
+
+code {
+  background-color: rgba(28, 28, 28, 0.05);
+  color: rgb(226, 32, 90);
+  padding: 2px 3px 1px;
+  border: 1px solid rgba(28, 28, 28, 0.15);
+  border-radius: 3px;
+}
